@@ -1,0 +1,91 @@
+header {
+  padding: 12px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1019607843), 0 2px 2px rgba(0, 0, 0, 0.0588235294), 0 0 2px rgba(0, 0, 0, 0.0705882353);
+}
+header .header-left {
+  display: flex;
+  align-items: center;
+}
+header .header-left svg {
+  padding-right: 16px;
+}
+header .header-left ul {
+  display: flex;
+  align-items: center;
+}
+header .header-left ul li {
+  padding-left: 24px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  transition: ease-in-out 0.2s;
+  text-transform: uppercase;
+  letter-spacing: 2.55px;
+}
+header .header-left ul li:hover {
+  color: #00754a;
+}
+header .header-right {
+  display: flex;
+  align-items: center;
+}
+header .header-right .header-right-text {
+  padding-right: 40px;
+  display: flex;
+}
+header .header-right .header-right-text:hover, header .header-right .header-right-text:hover a {
+  color: #00754a;
+  cursor: pointer;
+}
+header .header-right .header-right-text svg {
+  margin-right: 8px;
+}
+header .header-right .header-right-text a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.25px;
+  color: black;
+}
+header .header-right .sign {
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+  border-radius: 50px;
+  padding: 7px 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "Roboto", sans-serif;
+  width: 78px;
+  height: 32px;
+  text-align: center;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+  margin-right: 16px;
+}
+header .header-right .sign:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+header .header-right .join {
+  border: 1px solid black;
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  border-radius: 50px;
+  padding: 7px 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+header .header-right .join:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}/*# sourceMappingURL=Header.css.map */
