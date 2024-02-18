@@ -25,6 +25,7 @@ header .header-left ul li {
   transition: ease-in-out 0.2s;
   text-transform: uppercase;
   letter-spacing: 2.55px;
+  cursor: pointer;
 }
 header .header-left ul li:hover {
   color: #00754a;

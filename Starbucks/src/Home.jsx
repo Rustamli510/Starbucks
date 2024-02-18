@@ -70,6 +70,9 @@ function Home() {
                     <a className="sb-button" href="https://starbucks.app.link/23P2Qm5Nbtb" style={{minWidth: '35px', minHeight: '35px'}}>Order now</a>
                 </div>
             </div>
+            <div className="center-footer">
+                <p>*At participating stores only. Some restrictions apply. Linked Card members will earn 2% Cash Back on the full purchase price of every Qualifying Purchase. Bonus Star offer excludes taxes and tips. Stars may not be earned on purchases of alcohol or on reloads of Starbucks Cards that are not registered. For full details, visit <a href="https://www.starbucks.com/bofa">www.starbucks.com/bofa</a>. Bank of America, N.A. Member FDIC.</p>
+            </div>
         </section>
     )
 }
