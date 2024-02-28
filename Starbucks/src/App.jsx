@@ -1,17 +1,27 @@
-import React, { useEffect, useState } from 'react'
-import axios from "axios"
+import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Header from './Header'
 import Home from './Home'
 import Footer from './Footer'
+import Rewards from './Rewards'
+import Giftcards from './Giftcards'
+import Menu from './Menu'
 
 function App() {
-  
+
   return (
-    <div>
-      <Header/>
-      <Home/>
-      <Footer/>
-    </div>
+    <>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/menu' element={<Menu />} />
+          <Route path='/rewards' element={<Rewards />} />
+          <Route path='/giftcards' element={<Giftcards />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </>
   )
 }
 
