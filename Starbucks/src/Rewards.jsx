@@ -1,11 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './scss/Rewards.css'
 import Star from './../img/Star.webp'
 import One from './../img/getting-started-1@2x.webp'
 import Two from './../img/getting-started-2@2x.webp'
 import Three from './../img/getting-started-3@2x.webp'
+import Twentyfive from './../img/025.webp'
+import Hundred from './../img/100.webp'
+import TwoHundred from './../img/200.webp'
+import ThreeHundred from './../img/300.webp'
+import FourHundred from './../img/400.webp'
+
 
 function Rewards() {
+
+  const [displayed, setDisplayed] = useState(<div className="stars-bottom">
+    <img src={Twentyfive} alt="" />
+    <div className="text">
+      <h3>Customize your drink</h3>
+      <p>Make your drink just right with an extra espresso shot, nondairy milk or a dash of your favorite syrup.</p>
+    </div>
+  </div>)
+
+  const [border, setBorder] = useState(0);
+
+  const handleClick = (id, index) => {
+    setDisplayed(id);
+    setBorder(index);
+  }
   return (
     <div>
       <div className="banner">
@@ -65,6 +86,60 @@ function Rewards() {
         </div>
       </section>
 
+      <section className='stars'>
+        <div className="stars-top">
+          <h2>Get your favorites for free</h2>
+          <ul>
+            <li onClick={() => handleClick(<div className="stars-bottom">
+              <img src={Twentyfive} alt="" />
+              <div className="text">
+                <h3>Customize your drink</h3>
+                <p>Make your drink just right with an extra espresso shot, nondairy milk or a dash of your favorite syrup.</p>
+              </div>
+            </div>, 0)}
+              className={border === 0 ? 'active' : ''}
+            >25<span>★</span></li>
+            <li onClick={() => handleClick(<div className="stars-bottom">
+              <img src={Hundred} alt="" />
+              <div className="text">
+                <h3>Brewed hot or iced coffee or tea, bakery item, packaged snack and more</h3>
+                <p>Treat yourself to an iced coffee, buttery croissant, bag of chips and more.</p>
+              </div>
+            </div>, 1)}
+              className={border === 1 ? 'active' : ''}
+            >100<span>★</span></li>
+            <li onClick={() => handleClick(<div className="stars-bottom">
+              <img src={TwoHundred} alt="" />
+              <div className="text">
+                <h3>Handcrafted drink (Cold Brew, lattes and more) or hot breakfast</h3>
+                <p>Turn good mornings great with a delicious handcrafted drink of your choice, breakfast sandwich or oatmeal on us.</p>
+              </div>
+            </div>, 2)}
+              className={border === 2 ? 'active' : ''}
+            >200<span>★</span></li>
+            <li onClick={() => handleClick(<div className="stars-bottom">
+              <img src={ThreeHundred} alt="" />
+              <div className="text">
+                <h3>Sandwich, protein box or at-home coffee</h3>
+                <p>Enjoy a PM pick-me-up with a lunch sandwich, protein box or a bag of coffee—including Starbucks VIA Instant®.</p>              </div>
+            </div>, 3)}
+            className={border === 3 ? 'active' : ''}
+            >300<span>★</span></li>
+            <li onClick={() => handleClick(<div className="stars-bottom">
+              <img src={FourHundred} alt="" />
+              <div className="text">
+                <h3>Select Starbucks® merchandise</h3>
+                <p>Take home a signature cup, drink tumbler or your choice of coffee merch up to $20.</p>
+              </div>
+            </div>, 4)}
+            className={border === 4 ? 'active' : ''}
+            >400<span>★</span></li>
+          </ul>
+        </div>
+        <div className="stars-bottom" style={{ transition: 'opacity 1s' }}>
+          {displayed}
+        </div>
+      </section>
     </div>
   )
 }

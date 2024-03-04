@@ -141,4 +141,65 @@
 }
 .easy-start .easy-start-bottom .easy-start-bottom-item:nth-child(2) {
   margin: 0 48px;
+}
+
+.stars {
+  background-color: rgba(211, 232, 225, 0.3294117647);
+  padding-top: 48px;
+}
+.stars .stars-top h2 {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  letter-spacing: 1.385;
+  text-align: center;
+  padding-bottom: 48px;
+}
+.stars .stars-top ul {
+  display: flex;
+  justify-content: center;
+}
+.stars .stars-top ul li {
+  padding: 8px 27px 16px 27px;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  letter-spacing: 1.5;
+  cursor: pointer;
+}
+.stars .stars-top ul li span {
+  width: 14px;
+  height: 21px;
+  display: inline-block;
+  color: #cba258;
+}
+.stars .stars-bottom {
+  background-color: #d4e9e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0;
+}
+.stars .stars-bottom img {
+  width: 375px;
+  height: 210px;
+  margin-right: 48px;
+}
+.stars .stars-bottom .text {
+  width: 375px;
+  height: 124px;
+  padding: 0 16px;
+}
+.stars .stars-bottom .text h3 {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.5;
+  padding-bottom: 16px;
+}
+.stars .stars-bottom .text p {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.5;
 }/*# sourceMappingURL=Rewards.css.map */
