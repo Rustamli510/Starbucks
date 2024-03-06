@@ -12,6 +12,16 @@ import FourHundred from './../img/400.webp'
 import Fun1 from './../img/1-fun-freebies.webp'
 import Fun2 from './../img/2-order-and-pay-ahead.webp'
 import Fun3 from './../img/3-get-to-free-faster.webp'
+import A1 from './../img/1A.png'
+import B1 from './../img/1B.webp'
+import A2 from './../img/2A.png'
+import B2 from './../img/2B.webp'
+import Risunka from './../img/844262945b2a8b8cfb293156e2583872.webp'
+import LStars from './../img/7997fb008f368630d3ca3c1194fd8404.svg'
+import RStars from './../img/b7e1b20df72e802cb1cf0e97e8fe21d0.svg'
+import Delta from './../img/delta-skymiles.webp'
+import Bank from './../img/bank-of-america.webp'
+
 
 
 function Rewards() {
@@ -170,6 +180,94 @@ function Rewards() {
           </div>
         </div>
 
+      </section>
+
+      <section className='cashorcard'>
+        <div className="cashorcard-top">
+          <h2>Cash or card, you earn Stars</h2>
+          <p>No matter how you pay, you can earn Stars with your morning coffee. Those Stars add up to (really delicious) Rewards.</p>
+        </div>
+        <div className="cashorcard-bottom">
+          <div className="dollar-section">
+            <div className="dollar">
+              <p>1<span>★</span>&nbsp;<span>per dollar</span></p>
+              <p>Pay as you go</p>
+            </div>
+            <div className="dollar-middle">
+              <img src={A1} alt="" />
+              <div className="dollar-middle-text">
+                <h3>Scan and pay separately</h3>
+                <p>Use cash or credit/debit card at the register.</p>
+              </div>
+            </div>
+
+            <div className="dollar-middle">
+              <img src={B1} alt="" />
+              <div className="dollar-middle-text">
+                <h3>Save payment in the app</h3>
+                <p>Check-out faster by saving a credit/debit card or PayPal to your account. You’ll be able to order ahead or scan and pay at the register in one step.</p>
+              </div>
+            </div>
+          </div>
+          <div className="dollar-section">
+            <div className="dollar">
+              <p>2<span>★</span>&nbsp;<span>per dollar</span></p>
+              <p>Pay as you go</p>
+            </div>
+            <div className="dollar-middle">
+              <img src={A2} alt="" />
+              <div className="dollar-middle-text">
+                <h3>Preload</h3>
+                <p>To save time and earn Stars twice as fast, add money to your digital Starbucks Card using any payment option. Scan and pay in one step or order ahead in the app.</p>
+              </div>
+            </div>
+
+            <div className="dollar-middle">
+              <img src={B2} alt="" />
+              <div className="dollar-middle-text">
+                <h3>Register your gift card</h3>
+                <p>Then use it to pay through the app. You can even consolidate balances from multiple cards in one place.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className='rewards-coming'>
+        <img src={Risunka} style={{ width: '1349px', height: '621px' }} alt="" />
+        <div className="inner">
+          <div className="rstars">
+            <img src={LStars} alt="" />
+          </div>
+          <div className="inner-text">
+            <div className="inner-text-top">
+              <h2>Keep the Rewards Coming</h2>
+              <p>The Rewards don't stop at your morning coffee. Join Starbucks® Rewards and unlock perks from our partners, all while earning more Stars.</p>
+            </div>
+            <div className="inner-text-bottom">
+              <div className="inner-text-item">
+                <img src={Delta} alt="" />
+                <p><a href="https://www.deltastarbucks.com/content/starbucks/en/overview.html?mkcpgn=dipd-sbux7042" target="_blank"><span>Link your Delta SkyMiles®</span></a> and Starbucks® Rewards accounts to earn 1 mile per $1 spent at Starbucks and double Stars on Delta travel days.<a href="#deltaSkymilesTermsDescriptionId"><sup>1</sup></a></p>
+              </div>
+              <div className="inner-text-item">
+                <img src={Bank} alt="" />
+                <p><a href="https://promotions.bankofamerica.com/starbucks?cm_mmc=ESZ-EnterpriseSales-_-Cobrand_Site-_-ES35LT0004_StarbucksRewardsModuleBofA_SRModuleBofA-_-StarbucksPartnerMktg" target="_blank"><span>Link your Bank of America</span></a> eligible card and Starbucks® Rewards account to earn 2% Cash Back and Bonus Stars on qualifying Starbucks in-app purchases.<a href="#bankOfAmericaTermsDescriptionId"><sup>2</sup></a></p>
+              </div>
+            </div>
+            <a className='join-starbucks-rewards' href="/account/create">Join Starbucks® Rewards</a>
+          </div>
+          <div className="lstars">
+            <img src={RStars} alt="" />
+          </div>
+        </div>
+
+      </section>
+
+      <section className='questions'>
+        <div className="questions-text">
+          <h2 class="sb-heading text-semibold text-lg pb3" tabindex="-1">Questions?</h2>
+          <p>We want to help in any way we can. You can ask your barista anytime or we’ve answered the most commonly asked questions <a href="https://customerservice.starbucks.com/app/answers/list/p/552" target="_blank"><span>right over here</span></a>.</p>
+        </div>
       </section>
     </div>
   )
