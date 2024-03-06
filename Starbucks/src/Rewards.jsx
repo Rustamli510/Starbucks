@@ -9,6 +9,9 @@ import Hundred from './../img/100.webp'
 import TwoHundred from './../img/200.webp'
 import ThreeHundred from './../img/300.webp'
 import FourHundred from './../img/400.webp'
+import Fun1 from './../img/1-fun-freebies.webp'
+import Fun2 from './../img/2-order-and-pay-ahead.webp'
+import Fun3 from './../img/3-get-to-free-faster.webp'
 
 
 function Rewards() {
@@ -123,7 +126,7 @@ function Rewards() {
                 <h3>Sandwich, protein box or at-home coffee</h3>
                 <p>Enjoy a PM pick-me-up with a lunch sandwich, protein box or a bag of coffee—including Starbucks VIA Instant®.</p>              </div>
             </div>, 3)}
-            className={border === 3 ? 'active' : ''}
+              className={border === 3 ? 'active' : ''}
             >300<span>★</span></li>
             <li onClick={() => handleClick(<div className="stars-bottom">
               <img src={FourHundred} alt="" />
@@ -132,13 +135,41 @@ function Rewards() {
                 <p>Take home a signature cup, drink tumbler or your choice of coffee merch up to $20.</p>
               </div>
             </div>, 4)}
-            className={border === 4 ? 'active' : ''}
+              className={border === 4 ? 'active' : ''}
             >400<span>★</span></li>
           </ul>
         </div>
         <div className="stars-bottom" style={{ transition: 'opacity 1s' }}>
           {displayed}
         </div>
+      </section>
+
+      <section className='endless'>
+        <div className="endless-top">
+          <h2>Endless Extras</h2>
+          <p>Joining Starbucks® Rewards means unlocking access to exclusive benefits. Say hello to easy ordering, tasty Rewards and—yes, free coffee.</p>
+        </div>
+        <div className="endless-bottom">
+          <div className="endless-bottom-item">
+            <img src={Fun1} alt="presentation" />
+            <h3>Fun freebies</h3>
+            <p>Not only can you earn free coffee, look forward to a birthday treat plus coffee and tea refills.</p>
+            <button>Learn more</button>
+          </div>
+          <div className="endless-bottom-item">
+            <img src={Fun2} alt="presentation" />
+            <h3>Order &amp; pay ahead</h3>
+            <p>Enjoy the convenience of in-store, curbside or drive-thru pickup at select stores.</p>
+            <button>Learn more</button>
+          </div>
+          <div className="endless-bottom-item">
+            <img src={Fun3} alt="presentation" />
+            <h3>Get to free faster</h3>
+            <p>Earn Stars even quicker with Bonus Star challenges, Double Star Days and exciting games.</p>
+            <button>Learn more</button>
+          </div>
+        </div>
+
       </section>
     </div>
   )

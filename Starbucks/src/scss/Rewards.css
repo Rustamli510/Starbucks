@@ -178,7 +178,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 32px 0;
+  padding: 16px 0;
 }
 .stars .stars-bottom img {
   width: 375px;
@@ -202,4 +202,64 @@
   font-weight: 400;
   letter-spacing: -0.01em;
   line-height: 1.5;
+}
+
+.endless {
+  padding: 64px 40px;
+}
+.endless .endless-top {
+  text-align: center;
+  margin: 0 auto;
+  width: 634px;
+}
+.endless .endless-top h2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.endless .endless-top p {
+  padding-top: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.endless .endless-bottom {
+  padding: 48px 68px 0 68px;
+  display: flex;
+  justify-content: space-between;
+}
+.endless .endless-bottom .endless-bottom-item {
+  width: 345px;
+  text-align: center;
+}
+.endless .endless-bottom img {
+  margin: 0 auto;
+  display: flex;
+  width: 112px;
+  height: 112px;
+}
+.endless .endless-bottom h3 {
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.5;
+  padding: 24px 0 20px 0;
+}
+.endless .endless-bottom p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-bottom: 16px;
+}
+.endless .endless-bottom button {
+  border: none;
+  background-color: white;
+  text-decoration: underline;
+  color: #006241;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  cursor: pointer;
+}
+.endless .endless-bottom button:hover {
+  text-decoration: none;
 }/*# sourceMappingURL=Rewards.css.map */

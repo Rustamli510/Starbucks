@@ -193,9 +193,10 @@
                 letter-spacing: 1.5;
                 cursor: pointer;
 
-                &:active{
+                &:active {
                     // border-bottom: 4px solid blue;
                 }
+
                 span {
                     width: 14px;
                     height: 21px;
@@ -206,25 +207,25 @@
         }
     }
 
-    .stars-bottom{
+    .stars-bottom {
         background-color: #d4e9e2;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 32px 0;
+        padding: 16px 0;
 
-        img{
+        img {
             width: 375px;
             height: 210px;
             margin-right: 48px;
         }
 
-        .text{
+        .text {
             width: 375px;
             height: 124px;
             padding: 0 16px;
 
-            h3{
+            h3 {
                 font-size: 24px;
                 font-weight: 600;
                 letter-spacing: -0.01em;
@@ -232,11 +233,81 @@
                 padding-bottom: 16px;
             }
 
-            p{
+            p {
                 font-size: 14px;
                 font-weight: 400;
                 letter-spacing: -0.01em;
                 line-height: 1.5;
+            }
+        }
+    }
+}
+
+.endless {
+    padding: 64px 40px;
+
+    .endless-top {
+        text-align: center;
+        margin: 0 auto;
+        width: 634px;
+
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+
+        p {
+            padding-top: 16px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+    }
+
+    .endless-bottom {
+        padding: 48px 68px 0 68px;
+        display: flex;
+        justify-content: space-between;
+
+        .endless-bottom-item {
+            width: 345px;
+            text-align: center;
+        }
+
+        img {
+            margin: 0 auto;
+            display: flex;
+            width: 112px;
+            height: 112px;
+        }
+
+        h3 {
+            font-size: 19px;
+            font-weight: 600;
+            line-height: 1.5;
+            padding: 24px 0 20px 0;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.5;
+            padding-bottom: 16px;
+        }
+
+        button {
+            border: none;
+            background-color: white;
+            text-decoration: underline;
+            color: #006241;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: none;
             }
         }
     }
