@@ -269,6 +269,37 @@ function Rewards() {
           <p>We want to help in any way we can. You can ask your barista anytime or we’ve answered the most commonly asked questions <a href="https://customerservice.starbucks.com/app/answers/list/p/552" target="_blank"><span>right over here</span></a>.</p>
         </div>
       </section>
+
+      <div className="info">
+        <div className="top">
+        <p>At participating stores. Restrictions apply.</p>
+        <p><sup>1</sup>Excludes taxes and gratuities. At participating stores. Some restrictions apply. Flights purchased close to departure may not earn double Stars. Stars and miles may not be earned on purchases of alcohol, Starbucks Cards and Starbucks Card reloads. For details, visit <a href="https://www.deltastarbucks.com/terms" target="_blank"><span>deltastarbucks.com/terms</span></a>.<a href="#deltaSkymilesNoteId">↩</a></p>
+        <p><sup>2</sup>At participating stores only. Some restrictions apply. Linked Card members will earn 2% Cash Back on the full purchase price of every Qualifying Purchase. Extra Star offer excludes taxes and tips. Stars may not be earned on purchases of alcohol or on reloads of Starbucks Cards that are not registered. For details, visit <a href="https://promotions.bankofamerica.com/starbucks#disclosure-1223753557" target="_blank"><span>Terms and Conditions</span></a>. Bank of America, N.A. Member FDIC.<a href="#bankOfAmericaNoteId">↩</a></p>
+        </div>
+        <div className="mid">
+          <div className="earning">
+          <h3>Earning Stars</h3>
+          <p>Stars cannot be earned on purchases of alcohol, Starbucks Cards or Starbucks Card reloads.</p>
+          <p>Earn 1 Star per $1 spent when you scan your member barcode in the app, then pay with cash, credit/debit cards or mobile wallets at participating stores. You can also earn 1 Star per $1 spent when you link a payment method and pay directly through the app.</p>
+          <p>Earn 2 Stars per $1 spent when you load funds and pay with your digital Starbucks Card in the app. You can also earn 2 Stars per $1 spent when you pay in-person at a participating store with your registered physical Starbucks Card or scan your member barcode in the app, and then use any physical Starbucks Card (regardless of whether it is registered) to complete the purchase.</p>
+          </div>
+          <div className="termofuse">
+          <h3>Terms of Use</h3>
+          <p>For full program details visit <a href="https://www.starbucks.com/rewards/terms/" target="_blank"><span>starbucks.com/rewards/terms</span></a>.</p>
+          <p>Starbucks® Rewards benefits are available at participating Starbucks stores. Not all stores have the ability to honor Rewards at this time. Visit the <a href="/store-locator" target="_blank"><span>Starbucks Store Locator</span></a> and search for locations honoring “Redeem Rewards”.</p>
+          </div>
+        </div>
+        <div className="bottom">
+          <div className="benefits">
+          <h3>Benefits</h3>
+          <p>Free refills available during same in-store visit only. To qualify for the Birthday Reward, you must have made at least one Star-earning transaction.</p>
+          </div>
+          <div className="redeeming">
+          <h3>Redeeming Rewards</h3>
+          <p>Rewards cannot be redeemed for alcoholic beverages or multi-serve items. You pay the difference for any beverage customization over $1 and/or merchandise item over $20. Not all stores honor tiered Rewards. Select stores redeem 200 Stars for free food or drink items only.</p>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

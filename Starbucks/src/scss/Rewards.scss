@@ -406,6 +406,7 @@
 
 .rewards-coming {
     position: relative;
+    padding-bottom: 32px;
 
     .inner {
         background-color: #d4e9e2;
@@ -512,11 +513,14 @@
 
     .questions-text {
         width: 634px;
+        margin: 0 auto;
+
         h2 {
             font-size: 28px;
             font-weight: 600;
             line-height: 1.5;
             letter-spacing: -0.01em;
+            padding-bottom: 16px;
         }
 
         p {
@@ -524,6 +528,66 @@
             font-weight: 400;
             line-height: 1.5;
             letter-spacing: -0.01em;
+
+            a {
+                text-decoration: underline;
+                color: #006241;
+            }
+        }
+    }
+}
+
+.info {
+    margin: 32px 0;
+    padding: 48px 40px;
+    background-color: #f9f9f9;
+    p {
+        padding-bottom: 8px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: -0.01em;
+
+        a {
+            text-decoration: underline;
+            color: #006241;
+
+            &:last-child {
+                text-decoration: none;
+            }
+        }
+    }
+    h3 {
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        line-height: 1.5;
+        text-transform: uppercase;
+        color: #00000094;
+        padding-bottom: 16px;
+    }
+    .top {
+        padding-bottom: 16px;
+    }
+    .mid {  
+        padding-bottom: 32px;
+        display: flex;
+        .earning{
+            width: 634px;
+        }
+        .termofuse{
+            width: 634px;
+            padding-left: 32px;
+        }
+    }
+    .bottom{
+        display: flex;
+        .benefits{
+            width: 634px;
+        }
+        .redeeming{
+            width: 634px;
+            padding-left: 32px;
         }
     }
 }

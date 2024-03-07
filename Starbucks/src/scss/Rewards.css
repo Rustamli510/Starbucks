@@ -341,6 +341,7 @@
 
 .rewards-coming {
   position: relative;
+  padding-bottom: 32px;
 }
 .rewards-coming .inner {
   background-color: #d4e9e2;
@@ -427,16 +428,75 @@
 }
 .questions .questions-text {
   width: 634px;
+  margin: 0 auto;
 }
 .questions .questions-text h2 {
   font-size: 28px;
   font-weight: 600;
   line-height: 1.5;
   letter-spacing: -0.01em;
+  padding-bottom: 16px;
 }
 .questions .questions-text p {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: -0.01em;
+}
+.questions .questions-text p a {
+  text-decoration: underline;
+  color: #006241;
+}
+
+.info {
+  margin: 32px 0;
+  padding: 48px 40px;
+  background-color: #f9f9f9;
+}
+.info p {
+  padding-bottom: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+.info p a {
+  text-decoration: underline;
+  color: #006241;
+}
+.info p a:last-child {
+  text-decoration: none;
+}
+.info h3 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5803921569);
+  padding-bottom: 16px;
+}
+.info .top {
+  padding-bottom: 16px;
+}
+.info .mid {
+  padding-bottom: 32px;
+  display: flex;
+}
+.info .mid .earning {
+  width: 634px;
+}
+.info .mid .termofuse {
+  width: 634px;
+  padding-left: 32px;
+}
+.info .bottom {
+  display: flex;
+}
+.info .bottom .benefits {
+  width: 634px;
+}
+.info .bottom .redeeming {
+  width: 634px;
+  padding-left: 32px;
 }/*# sourceMappingURL=Rewards.css.map */
