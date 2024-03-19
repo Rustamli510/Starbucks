@@ -40,6 +40,10 @@ footer {
                 }
             }
         }
+
+        @media (max-width:575px) {
+            display: none;
+        }
     }
 
     .hr {
@@ -48,7 +52,7 @@ footer {
         height: 2px;
         border-radius: 100px;
         background-color: rgba(0, 0, 0, .2);
-        margin-bottom: 32px;
+        margin: 32px 0;
     }
 
     .footer-bottom {
@@ -93,7 +97,7 @@ footer {
 
                 li {
                     padding-right: 24px;
-                    
+
 
                     a {
                         text-transform: capitalize;
@@ -102,20 +106,79 @@ footer {
                         letter-spacing: -0.01em;
                         color: black;
                         transition: all .3s;
-                        
-                        &:hover{
+
+                        &:hover {
                             text-decoration: underline;
                         }
                     }
+
+                    @media (max-width:575px) {
+                        padding: 8px 0 12px 0;
+                    }
+                }
+
+                @media (max-width:575px) {
+                    display: block;
+                }
+
+                p {
+                    padding: 16px 0;
+                    font-size: 14px;
+                    color: #00000094;
+                    line-height: 1.5;
+                    letter-spacing: -0.01em;
                 }
             }
-            p{
-                padding: 16px 0;
-                font-size: 14px;
-                color: #00000094;
-                line-height: 1.5;
-                letter-spacing: -0.01em;
+        }
+
+
+        @media (max-width:575px) {
+            padding: 16px 24px;
+
+            .footer-media>div {
+                margin: 0 !important;
+            }
+
+            .footer-media {
+                .css-1f773le-MuiButtonBase-root-MuiAccordionSummary-root {
+                    padding: 0;
+                }
+
+                .css-1086bdv-MuiPaper-root-MuiAccordion-root {
+                    box-shadow: 0 0 0 #fff;
+                    width: 100%;
+
+                    &::before {
+                        display: none;
+                    }
+                }
+
+                .css-1086bdv-MuiPaper-root-MuiAccordion-root {
+                    padding: 0;
+                }
+
+                .css-eqpfi5-MuiAccordionSummary-content {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #000000de;
+                }
+
+                .css-15v22id-MuiAccordionDetails-root li {
+                    padding: 8px 0;
+                    margin-bottom: 8px;
+                    color: rgba(0, 0, 0, .58);
+                    background-color: transparent;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    letter-spacing: -0.01em;
+                    text-transform: capitalize;
+
+                    &:hover {
+                        color: rgba(0, 0, 0, .87);
+                        cursor: pointer;
+                    }
+                }
             }
         }
     }
-}

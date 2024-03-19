@@ -36,13 +36,18 @@ footer .footer-top ul li h1 {
   margin-bottom: 16px;
   text-transform: capitalize;
 }
+@media (max-width: 575px) {
+  footer .footer-top {
+    display: none;
+  }
+}
 footer .hr {
   color: rgba(0, 0, 0, 0.87);
   max-width: 1269px;
   height: 2px;
   border-radius: 100px;
   background-color: rgba(0, 0, 0, 0.2);
-  margin-bottom: 32px;
+  margin: 32px 0;
 }
 footer .footer-bottom .ft-bt-top ul {
   display: flex;
@@ -89,10 +94,62 @@ footer .footer-bottom .ft-bt-center ul li a {
 footer .footer-bottom .ft-bt-center ul li a:hover {
   text-decoration: underline;
 }
+@media (max-width: 575px) {
+  footer .footer-bottom .ft-bt-center ul {
+    display: block;
+  }
+  footer .footer-bottom .ft-bt-center ul li {
+    padding: 0;
+  }
+  footer .footer-bottom .ft-bt-center ul .stick {
+    display: none;
+  }
+}
 footer .footer-bottom .ft-bt-center p {
   padding: 16px 0;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.5803921569);
   line-height: 1.5;
   letter-spacing: -0.01em;
+}
+@media (max-width: 575px) {
+  footer {
+    padding: 16px 24px;
+  }
+  footer .footer-media > div {
+    margin: 0 !important;
+  }
+  footer .footer-media .css-1f773le-MuiButtonBase-root-MuiAccordionSummary-root {
+    padding: 0;
+  }
+  footer .footer-media .css-1086bdv-MuiPaper-root-MuiAccordion-root {
+    box-shadow: 0 0 0 #fff;
+    width: 100%;
+  }
+  footer .footer-media .css-1086bdv-MuiPaper-root-MuiAccordion-root::before {
+    display: none;
+  }
+  footer .footer-media .css-1086bdv-MuiPaper-root-MuiAccordion-root {
+    padding: 0;
+  }
+  footer .footer-media .css-eqpfi5-MuiAccordionSummary-content {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8705882353);
+  }
+  footer .footer-media .css-15v22id-MuiAccordionDetails-root li {
+    padding: 8px 0;
+    margin-bottom: 8px;
+    color: rgba(0, 0, 0, 0.58);
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    text-transform: capitalize;
+  }
+  footer .footer-media .css-15v22id-MuiAccordionDetails-root li:hover {
+    color: rgba(0, 0, 0, 0.87);
+    cursor: pointer;
+  }
 }/*# sourceMappingURL=Footer.css.map */
