@@ -1,0 +1,43 @@
+section{
+    padding: 48px 0;
+    .container{
+        max-width: 720px;
+        margin: 0 auto;
+
+        .company-top{
+            h1{
+                font-size: 50px;
+                font-weight: 700;
+                letter-spacing: 2px;
+                line-height: 1.2;
+            }
+
+            p{
+                padding: 24px 0;
+                font-size: 19px;
+                line-height: 1.75;
+                font-weight: 400;
+                letter-spacing: -0.01em;
+            }
+
+            img{
+                width: 720px;
+                height: 450px;
+                padding-bottom: 32px;
+            }
+
+            a{
+                padding: 7px 16px;
+                border-radius: 50px;
+                background-color: #00754a;
+                color: white;
+                font-weight: 600;
+                line-height: 1.2;
+
+                &:hover{
+                    background-color: #006241;
+                }
+            }
+        }
+    }
+}

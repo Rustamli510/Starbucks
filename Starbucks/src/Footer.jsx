@@ -1,6 +1,4 @@
-// import React from 'react'
 import './scss/Footer.css'
-// import { Link } from "react-router-dom"
 import Facebook from '../img/facebook.png'
 import Instagram from '../img/instagram.png'
 import Pinterest from '../img/pinterest.png'
@@ -9,11 +7,10 @@ import Twitter from '../img/twitter.png'
 import Youtube from '../img/youtube.png'
 import * as React from 'react';
 import Accordion from '@mui/material/Accordion';
-// import AccordionActions from '@mui/material/AccordionActions';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-// import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom'
 
 function Footer() {
     return (
@@ -104,7 +101,7 @@ function Footer() {
             <div className="footer-top">
                 <ul>
                     <li><h1>About us</h1></li>
-                    <li>Our Company</li>
+                    <li><Link to="our-company">Our Company</Link></li>
                     <li>Our Coffee</li>
                     <li>Stroies and News</li>
                     <li>Starbucks Archive</li>
@@ -170,10 +167,9 @@ function Footer() {
                         <li className='stick'>|</li>
                         <li><a href="">cookie preferences</a></li>
                     </ul>
-                    <p>© 2024 Starbucks Coffee Company. All rights reserved.</p>
+                    <p className='end-p'>© 2024 Starbucks Coffee Company. All rights reserved.</p>
                 </div>
             </div>
-            
         </footer>
     )
 }

@@ -6,6 +6,7 @@ import Footer from './Footer'
 import Rewards from './Rewards'
 import Giftcards from './Giftcards'
 import Menu from './Menu'
+import Company from './Company'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
           <Route path='/menu' element={<Menu />} />
           <Route path='/rewards' element={<Rewards />} />
           <Route path='/giftcards' element={<Giftcards />} />
+          <Route path='/our-company' element={<Company />} />
         </Routes>
         <Footer />
       </BrowserRouter>
