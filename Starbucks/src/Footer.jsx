@@ -102,7 +102,7 @@ function Footer() {
                 <ul>
                     <li><h1>About us</h1></li>
                     <li><Link to="our-company">Our Company</Link></li>
-                    <li>Our Coffee</li>
+                    <li><Link to='our-coffee'>Our Coffee</Link></li>
                     <li>Stroies and News</li>
                     <li>Starbucks Archive</li>
                     <li>Investor Relations</li>
@@ -120,8 +120,8 @@ function Footer() {
                 </ul>
                 <ul>
                     <li><h1>Social Impacts</h1></li>
-                    <li>People</li>
-                    <li>Planet</li>
+                    <li><Link to='people'>People</Link></li>
+                    <li><Link to='planet'>Planet</Link></li>
                     <li>Enviromental and Social Impact Reporting</li>
                 </ul>
                 <ul>

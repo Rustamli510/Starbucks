@@ -7,6 +7,9 @@ import Rewards from './Rewards'
 import Giftcards from './Giftcards'
 import Menu from './Menu'
 import Company from './Company'
+import Coffee from './Coffee'
+import People from './People'
+import Planet from './Planet'
 
 function App() {
 
@@ -20,6 +23,9 @@ function App() {
           <Route path='/rewards' element={<Rewards />} />
           <Route path='/giftcards' element={<Giftcards />} />
           <Route path='/our-company' element={<Company />} />
+          <Route path='/our-coffee' element={<Coffee />} />
+          <Route path='/people' element={<People />} />
+          <Route path='/planet' element={<Planet />} />
         </Routes>
         <Footer />
       </BrowserRouter>

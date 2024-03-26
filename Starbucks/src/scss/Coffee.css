@@ -1,0 +1,127 @@
+section {
+  padding: 48px 0;
+}
+section .container {
+  max-width: 720px;
+  margin: 0 auto;
+}
+section .container .browse {
+  background-color: #00754a;
+  color: white;
+  border: 1px solid #00754a;
+  border-radius: 50px;
+  padding: 7px 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  transition: ease-in-out 0.2s;
+}
+section .container .browse:hover {
+  background-color: hsla(158, 100%, 23%, 0.9);
+}
+section .container .learn {
+  color: #00754a;
+  border: 1px solid #00754a;
+  border-radius: 50px;
+  padding: 7px 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  transition: ease-in-out 0.2s;
+}
+section .container .learn:hover {
+  background-color: hsla(158, 100%, 23%, 0.1);
+}
+section .container .lets-talk h1 {
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+section .container .lets-talk p {
+  padding: 24px 0;
+  font-size: 19px;
+  line-height: 1.75;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+section .container .lets-talk img {
+  width: 720px;
+  height: 450px;
+  margin-bottom: 32px;
+}
+section .container .find-coffee h1 {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+section .container .find-coffee p {
+  padding: 24px 0;
+  font-size: 19px;
+  line-height: 1.75;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+section .container .start-quiz {
+  padding-top: 48px;
+}
+section .container .start-quiz p {
+  padding: 24px 0;
+  font-size: 19px;
+  line-height: 1.75;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+section .container .start-quiz img {
+  width: 720px;
+  height: 511px;
+  margin-top: 48px;
+}
+section .container .rarest-coffee {
+  padding: 32px 0;
+}
+section .container .rarest-coffee h1 {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+section .container .rarest-coffee p {
+  padding: 24px 0 32px 0;
+  font-size: 19px;
+  line-height: 1.75;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+section .container .how-brew {
+  padding: 48px 0;
+}
+section .container .how-brew h1 {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+section .container .how-brew p {
+  padding: 24px 0;
+  font-size: 19px;
+  line-height: 1.75;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+section .container .how-brew img {
+  width: 720px;
+  height: 511px;
+  margin-bottom: 32px;
+}
+section .container .end {
+  padding: 12px 0;
+}
+section .container .end p {
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+section .container .end p:last-child {
+  padding-top: 21px;
+}/*# sourceMappingURL=Coffee.css.map */

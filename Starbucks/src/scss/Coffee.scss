@@ -1,0 +1,151 @@
+section {
+    padding: 48px 0;
+
+    .container {
+        max-width: 720px;
+        margin: 0 auto;
+
+        .browse{
+            background-color: #00754a;
+            color: white;
+            border: 1px solid #00754a;
+            border-radius: 50px;
+            padding: 7px 16px;
+            font-weight: 600;
+            line-height: 1.2;
+            transition: ease-in-out .2s;
+
+            &:hover{
+                background-color: hsla(158, 100%, 23%, 90%);
+            }
+        }
+
+        .learn {
+            color: #00754a;
+            border: 1px solid #00754a;
+            border-radius: 50px;
+            padding: 7px 16px;
+            font-weight: 600;
+            line-height: 1.2;
+            transition: ease-in-out .2s;
+
+            &:hover {
+                background-color: hsla(158, 100%, 23%, 10%);
+            }
+        }
+
+        .lets-talk{
+            h1{
+                font-size: 50px;
+                font-weight: 700;
+                letter-spacing: 2px;
+                line-height: 1.2;
+            }
+
+            p{
+                padding: 24px 0;
+                font-size: 19px;
+                line-height: 1.75;
+                font-weight: 400;
+                letter-spacing: -0.01em;
+            }
+
+            img{
+                width: 720px;
+                height: 450px;
+                margin-bottom: 32px;
+            }
+        }
+
+        .find-coffee{
+            h1{
+                font-size: 36px;
+                font-weight: 700;
+                letter-spacing: 2px;
+                line-height: 1.2;
+            }
+
+            p{
+                padding: 24px 0;
+                font-size: 19px;
+                line-height: 1.75;
+                font-weight: 400;
+                letter-spacing: -0.01em;
+            }
+        }
+
+        .start-quiz{
+            padding-top: 48px;
+
+            p{
+                padding: 24px 0;
+                font-size: 19px;
+                line-height: 1.75;
+                font-weight: 400;
+                letter-spacing: -0.01em;
+            }
+
+            img{
+                width: 720px;
+                height: 511px;
+                margin-top: 48px;
+            }
+        }
+
+        .rarest-coffee{
+            padding: 32px 0;
+            h1{
+                font-size: 36px;
+                font-weight: 700;
+                letter-spacing: 2px;
+                line-height: 1.2;
+            }
+
+            p{
+                padding: 24px 0 32px 0;
+                font-size: 19px;
+                line-height: 1.75;
+                font-weight: 400;
+                letter-spacing: -0.01em;
+            }
+        }
+
+        .how-brew{
+            padding: 48px 0;
+            h1{
+                font-size: 36px;
+                font-weight: 700;
+                letter-spacing: 2px;
+                line-height: 1.2;
+            }
+
+            p{
+                padding: 24px 0;
+                font-size: 19px;
+                line-height: 1.75;
+                font-weight: 400;
+                letter-spacing: -0.01em;
+            }
+
+            img{
+                width: 720px;
+                height: 511px;
+                margin-bottom: 32px;
+            }
+        }
+
+        .end{
+            padding: 12px 0;
+            p{
+                font-size: 14px;
+                line-height: 1.8;
+                font-weight: 400;
+                letter-spacing: -0.01em;
+
+                &:last-child{
+                    padding-top: 21px;
+                }
+            }
+        }
+    }
+}

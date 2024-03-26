@@ -19,16 +19,19 @@ section{
 
         .company-top{
             h1{
+                font-size: 50px;
                 font-weight: 700;
                 letter-spacing: 2px;
                 line-height: 1.2;
+                padding-bottom: 48px;
+            }
 
-                &:nth-child(1){
-                    font-size: 50px !important;
-                }
-                &:nth-child(2){
-                    font-size: 36px !important;
-                }
+            h2{
+                font-size: 36px;
+                font-weight: 700;
+                letter-spacing: 2px;
+                line-height: 1.2;
+                padding-bottom: 24px;
             }
 
             p{
@@ -42,7 +45,7 @@ section{
             img{
                 width: 720px;
                 height: 450px;
-                padding-bottom: 32px;
+                margin-bottom: 32px;
             }
 
             a{
@@ -62,7 +65,7 @@ section{
         .company-center{
             img{
                 width: 720px;
-                padding: 48px 0;
+                margin: 48px 0;
             }
 
             h1{
