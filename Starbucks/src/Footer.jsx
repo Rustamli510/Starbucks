@@ -106,7 +106,7 @@ function Footer() {
                     <li>Stroies and News</li>
                     <li>Starbucks Archive</li>
                     <li>Investor Relations</li>
-                    <li>Customer Service</li>
+                    <li><Link to='customer-service'>Customer Service</Link> </li>
                     <li>Contact us</li>
                 </ul>
                 <ul>

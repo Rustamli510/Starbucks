@@ -1,0 +1,231 @@
+section {
+  padding: 0;
+}
+section .customer-service {
+  display: flex;
+  background-image: url(./../../img/sbux_portal_bg_image.jpg);
+  background-position: 0px;
+  background-repeat: no-repeat;
+  padding: 0 40px;
+}
+section .customer-service .left h1 {
+  padding: 30px 0 15px 10px;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+section .customer-service .left img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  margin-top: 13px;
+  margin-left: 15px;
+  z-index: 9;
+}
+section .customer-service .left input {
+  padding: 17px 15px 15px 50px;
+  width: 620px;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  position: relative !important;
+}
+section .customer-service .left input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.25);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+section .customer-service .left input::placeholder {
+  color: rgba(0, 0, 0, 0.25);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+section .customer-service .left input:focus::-moz-placeholder {
+  color: black;
+}
+section .customer-service .left input:focus::placeholder {
+  color: black;
+}
+section .customer-service .left-bottom {
+  display: flex;
+  align-items: center;
+  padding: 15px 0 40px 10px;
+}
+section .customer-service .left-bottom h4 {
+  font-size: 14px;
+  line-height: 1.5;
+  opacity: 0.5;
+  color: white;
+  margin-right: 10px;
+}
+section .customer-service .left-bottom p {
+  background-color: #00754A;
+  padding: 5px 11px;
+  border-radius: 50px;
+  margin: 3px 6px 3px 0;
+  font-size: 14px;
+  line-height: 1.2;
+  color: white;
+  cursor: pointer;
+}
+section .customer-service .right {
+  width: 450px;
+  height: 230px;
+  position: absolute;
+  right: 40px;
+  padding: 25px 30px 0 30px;
+  text-align: center;
+  background-color: #00754A;
+  box-shadow: 8px 3px 8px rgba(0, 0, 0, 0.16), 3px 3px 8px rgba(0, 0, 0, 0.23);
+}
+section .customer-service .right h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 2.4rem;
+  letter-spacing: -0.01em;
+  color: white;
+  padding-bottom: 8px;
+}
+section .customer-service .right p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  opacity: 0.75;
+  color: white;
+  padding-bottom: 17px;
+}
+section .customer-service .right a {
+  border: 2px solid white;
+  border-radius: 50px;
+  padding: 7px 16px;
+  color: white;
+  transition: ease-in-out 0.2s;
+}
+section .customer-service .right a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.topic {
+  padding: 80px 40px;
+  display: flex;
+}
+.topic .left {
+  width: 65%;
+}
+.topic .left a {
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: black;
+}
+.topic .right {
+  width: 35%;
+}
+.topic .right .join-rewards {
+  padding: 32px 56px;
+  background-color: rgba(212, 233, 226, 0.33);
+  border-radius: 15px;
+  text-align: center;
+}
+.topic .right .join-rewards h1 {
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #00754A;
+}
+.topic .right .join-rewards p {
+  padding: 8px 0 23px 0;
+  color: rgba(0, 0, 0, 0.87);
+}
+.topic .right .join-rewards a {
+  padding: 7px 16px;
+  border-radius: 50px;
+  border: 1px solid #00754A;
+  color: #00754A;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 600;
+  transition: ease-in-out 0.2s;
+}
+.topic .right .join-rewards a:hover {
+  background-color: #d4e9e2;
+}
+
+.need-touch {
+  display: flex;
+  padding: 0 40px;
+  background-color: rgba(212, 233, 226, 0.33);
+}
+.need-touch .right {
+  padding: 25px 30px 30px 30px;
+}
+.need-touch .right h1 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: #006241;
+}
+.need-touch .right h3 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 2.4rem;
+  letter-spacing: -0.01em;
+  color: #006241;
+  opacity: 0.5;
+  padding-bottom: 10px;
+}
+.need-touch .right .right-center {
+  display: flex;
+  align-items: center;
+}
+.need-touch .right .right-center a {
+  display: flex;
+  align-items: center;
+  border: 2px solid #1E3932;
+  border-radius: 50px;
+  color: #1E3932;
+  padding: 10px 16px 11px 16px;
+  margin-right: 10px;
+}
+.need-touch .right .right-center a img {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+.need-touch .right h4 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 2.4rem;
+  letter-spacing: -0.01em;
+  color: #006241;
+  opacity: 0.5;
+  padding-top: 30px;
+}
+.need-touch .right .right-bottom .top {
+  display: flex;
+}
+.need-touch .right .right-bottom .top p {
+  padding-right: 18px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: #1E3932;
+}
+.need-touch .right .right-bottom .bottom {
+  display: flex;
+}
+.need-touch .right .right-bottom .bottom p {
+  padding-right: 18px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: #1E3932;
+}/*# sourceMappingURL=Customer.css.map */

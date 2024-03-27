@@ -10,6 +10,7 @@ import Company from './Company'
 import Coffee from './Coffee'
 import People from './People'
 import Planet from './Planet'
+import Customer from './Customer'
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
           <Route path='/our-coffee' element={<Coffee />} />
           <Route path='/people' element={<People />} />
           <Route path='/planet' element={<Planet />} />
+          <Route path='/customer-service' element={<Customer />} />
         </Routes>
         <Footer />
       </BrowserRouter>
