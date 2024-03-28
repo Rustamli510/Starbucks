@@ -10,7 +10,7 @@ import Letter from '../img/letter.png'
 function Costumer() {
   return (
     <>
-      <section>
+      <section className='service'>
         <div className="customer-service">
           <div className="left">
             <h1>Starbucks Customer Service</h1>

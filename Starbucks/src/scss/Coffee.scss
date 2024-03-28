@@ -5,7 +5,7 @@ section {
         max-width: 720px;
         margin: 0 auto;
 
-        .browse{
+        .browse {
             background-color: #00754a;
             color: white;
             border: 1px solid #00754a;
@@ -15,8 +15,12 @@ section {
             line-height: 1.2;
             transition: ease-in-out .2s;
 
-            &:hover{
+            &:hover {
                 background-color: hsla(158, 100%, 23%, 90%);
+            }
+
+            @media (max-width:575px) {
+                font-size: 14px;
             }
         }
 
@@ -32,118 +36,180 @@ section {
             &:hover {
                 background-color: hsla(158, 100%, 23%, 10%);
             }
+
+            @media (max-width:575px) {
+                font-size: 14px;
+            }
         }
 
-        .lets-talk{
-            h1{
+        .lets-talk {
+            h1 {
                 font-size: 50px;
                 font-weight: 700;
                 letter-spacing: 2px;
                 line-height: 1.2;
+
+                @media (max-width:575px) {
+                    font-size: 28px;
+                }
             }
 
-            p{
+            p {
                 padding: 24px 0;
                 font-size: 19px;
                 line-height: 1.75;
                 font-weight: 400;
                 letter-spacing: -0.01em;
+
+                @media (max-width:575px) {
+                    font-size: 16px;
+                }
             }
 
-            img{
+            img {
                 width: 720px;
                 height: 450px;
                 margin-bottom: 32px;
+
+                @media (max-width:575px) {
+                    width: 100%;
+                    height: 100%;
+                }
             }
         }
 
-        .find-coffee{
-            h1{
+        .find-coffee {
+            h1 {
                 font-size: 36px;
                 font-weight: 700;
                 letter-spacing: 2px;
                 line-height: 1.2;
+
+                @media (max-width:575px) {
+                    font-size: 24px;
+                }
             }
 
-            p{
+            p {
                 padding: 24px 0;
                 font-size: 19px;
                 line-height: 1.75;
                 font-weight: 400;
                 letter-spacing: -0.01em;
+
+                @media (max-width:575px) {
+                    font-size: 16px;
+                }
             }
         }
 
-        .start-quiz{
+        .start-quiz {
             padding-top: 48px;
 
-            p{
+            p {
                 padding: 24px 0;
                 font-size: 19px;
                 line-height: 1.75;
                 font-weight: 400;
                 letter-spacing: -0.01em;
+
+                @media (max-width:575px) {
+                    font-size: 16px;
+                }
             }
 
-            img{
+            img {
                 width: 720px;
                 height: 511px;
                 margin-top: 48px;
+
+                @media (max-width:575px) {
+                    width: 100%;
+                    height: 100%;
+                }
             }
         }
 
-        .rarest-coffee{
+        .rarest-coffee {
             padding: 32px 0;
-            h1{
+
+            h1 {
                 font-size: 36px;
                 font-weight: 700;
                 letter-spacing: 2px;
                 line-height: 1.2;
+
+                @media (max-width:575px) {
+                    font-size: 24px;
+                }
             }
 
-            p{
+            p {
                 padding: 24px 0 32px 0;
                 font-size: 19px;
                 line-height: 1.75;
                 font-weight: 400;
                 letter-spacing: -0.01em;
+
+                @media (max-width:575px) {
+                    font-size: 16px;
+                }
             }
         }
 
-        .how-brew{
+        .how-brew {
             padding: 48px 0;
-            h1{
+
+            h1 {
                 font-size: 36px;
                 font-weight: 700;
                 letter-spacing: 2px;
                 line-height: 1.2;
+
+                @media (max-width:575px) {
+                    font-size: 24px;
+                }
             }
 
-            p{
+            p {
                 padding: 24px 0;
                 font-size: 19px;
                 line-height: 1.75;
                 font-weight: 400;
                 letter-spacing: -0.01em;
+
+                @media (max-width:575px) {
+                    font-size: 16px;
+                }
             }
 
-            img{
+            img {
                 width: 720px;
                 height: 511px;
                 margin-bottom: 32px;
+
+                @media (max-width:575px) {
+                    width: 100%;
+                    height: 100%;
+                }
             }
         }
 
-        .end{
+        .end {
             padding: 12px 0;
-            p{
+
+            p {
                 font-size: 14px;
                 line-height: 1.8;
                 font-weight: 400;
                 letter-spacing: -0.01em;
 
-                &:last-child{
+                &:last-child {
                     padding-top: 21px;
+                }
+
+                @media (max-width:575px) {
+                    font-size: 13px;
                 }
             }
         }

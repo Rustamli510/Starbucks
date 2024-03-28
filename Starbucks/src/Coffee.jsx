@@ -20,10 +20,8 @@ function Coffee() {
                 </div>
 
                 <div className="find-coffee">
-                    <h1>Let's talk coffee</h1>
-                    <p>Whether you're searching for something new to warm your mug,
-                        seeking the best brew method for your favorite blend or exploring
-                        our rarest offerings, you’ve come to the right place.
+                    <h1>Find your favorite at-home coffee</h1>
+                    <p>From K-Cup pods to Starbucks® Premium Instant, we offer a wide selection of coffee to fill your cup.
                     </p>
                     <Link className='browse'>Browse our coffees</Link>
                 </div>

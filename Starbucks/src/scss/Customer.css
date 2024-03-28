@@ -1,14 +1,14 @@
-section {
+.service {
   padding: 0;
 }
-section .customer-service {
+.service .customer-service {
   display: flex;
   background-image: url(./../../img/sbux_portal_bg_image.jpg);
   background-position: 0px;
   background-repeat: no-repeat;
   padding: 0 40px;
 }
-section .customer-service .left h1 {
+.service .customer-service .left h1 {
   padding: 30px 0 15px 10px;
   color: white;
   font-size: 24px;
@@ -16,7 +16,7 @@ section .customer-service .left h1 {
   line-height: 1.4;
   letter-spacing: -0.01em;
 }
-section .customer-service .left img {
+.service .customer-service .left img {
   width: 20px;
   height: 20px;
   position: absolute;
@@ -24,7 +24,7 @@ section .customer-service .left img {
   margin-left: 15px;
   z-index: 9;
 }
-section .customer-service .left input {
+.service .customer-service .left input {
   padding: 17px 15px 15px 50px;
   width: 620px;
   border: none;
@@ -33,37 +33,37 @@ section .customer-service .left input {
   align-items: center;
   position: relative !important;
 }
-section .customer-service .left input::-moz-placeholder {
+.service .customer-service .left input::-moz-placeholder {
   color: rgba(0, 0, 0, 0.25);
   font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
 }
-section .customer-service .left input::placeholder {
+.service .customer-service .left input::placeholder {
   color: rgba(0, 0, 0, 0.25);
   font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
 }
-section .customer-service .left input:focus::-moz-placeholder {
+.service .customer-service .left input:focus::-moz-placeholder {
   color: black;
 }
-section .customer-service .left input:focus::placeholder {
+.service .customer-service .left input:focus::placeholder {
   color: black;
 }
-section .customer-service .left-bottom {
+.service .customer-service .left-bottom {
   display: flex;
   align-items: center;
   padding: 15px 0 40px 10px;
 }
-section .customer-service .left-bottom h4 {
+.service .customer-service .left-bottom h4 {
   font-size: 14px;
   line-height: 1.5;
   opacity: 0.5;
   color: white;
   margin-right: 10px;
 }
-section .customer-service .left-bottom p {
+.service .customer-service .left-bottom p {
   background-color: #00754A;
   padding: 5px 11px;
   border-radius: 50px;
@@ -73,7 +73,7 @@ section .customer-service .left-bottom p {
   color: white;
   cursor: pointer;
 }
-section .customer-service .right {
+.service .customer-service .right {
   width: 450px;
   height: 230px;
   position: absolute;
@@ -83,7 +83,7 @@ section .customer-service .right {
   background-color: #00754A;
   box-shadow: 8px 3px 8px rgba(0, 0, 0, 0.16), 3px 3px 8px rgba(0, 0, 0, 0.23);
 }
-section .customer-service .right h3 {
+.service .customer-service .right h3 {
   font-size: 20px;
   font-weight: 600;
   line-height: 2.4rem;
@@ -91,7 +91,7 @@ section .customer-service .right h3 {
   color: white;
   padding-bottom: 8px;
 }
-section .customer-service .right p {
+.service .customer-service .right p {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
@@ -100,14 +100,14 @@ section .customer-service .right p {
   color: white;
   padding-bottom: 17px;
 }
-section .customer-service .right a {
+.service .customer-service .right a {
   border: 2px solid white;
   border-radius: 50px;
   padding: 7px 16px;
   color: white;
   transition: ease-in-out 0.2s;
 }
-section .customer-service .right a:hover {
+.service .customer-service .right a:hover {
   background-color: rgba(255, 255, 255, 0.15);
 }
 
