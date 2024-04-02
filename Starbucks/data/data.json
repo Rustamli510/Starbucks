@@ -1,4 +1,39 @@
 {
+  "category": [
+    {
+      "id": 1,
+      "name": "Oleato"
+    },
+    {
+      "id": 2,
+      "name": "Hot Coffees"
+    },
+    {
+      "id": 3,
+      "name": "Hot Teas"
+    },
+    {
+      "id": 4,
+      "name": "Hot Drinks"
+    },
+    {
+      "id": 5,
+      "name": "Frappuccino Blended Beverages"
+    },
+    {
+      "id": 6,
+      "name": "Cold Coffees"
+    },
+    {
+      "id": 7,
+      "name": "Iced Teas"
+    },
+    {
+      "id": 8,
+      "name": "Cold Drinks"
+    }
+  ],
+
   "coffee": [
     {
       "id": 1,
@@ -805,7 +840,7 @@
     {
       "id": 28,
       "name": "Caffe Mocha",
-      "img": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20220607_CaffeMocha.jpg?impolicy=1by1_wide_topcrop_630",
+      "img": "https://globalassets.starbucks.com/digitalassets/products/bev/LavenderOatmilkLatte.jpg?impolicy=1by1_wide_topcrop_630",
       "category": "Drinks",
       "subcategory": "Hot Coffees",
       "type": "Mochas",
@@ -834,7 +869,8 @@
     },
     {
       "id": 29,
-      "name": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190716_PeppermintWhiteChocolateMocha.jpg?impolicy=1by1_wide_topcrop_630",
+      "img": "https://globalassets.starbucks.com/digitalassets/products/bev/LavenderOatmilkLatte.jpg?impolicy=1by1_wide_topcrop_630",
+      "name": "Lavender Oatmilk Latte",
       "category": "Drinks",
       "subcategory": "Hot Coffees",
       "type": "Mochas",
@@ -1224,7 +1260,7 @@
     {
       "id": 42,
       "name": "Peach Tranquility",
-      "img": "https://globalassets.starbucks.com/assets/cf7469c84a444e4f9a341f8023558c77.jpg?impolicy=1by1_wide_topcrop_630",
+      "img": "https://globalassets.starbucks.com/digitalassets/products/bev/MintMajestyHerbalTea.jpg?impolicy=1by1_wide_topcrop_630",
       "category": "Drinks",
       "subcategory": "Hot Teas",
       "type": "Herbal Teas",
@@ -1874,7 +1910,7 @@
     {
       "id": 65,
       "name": "Double Chocolaty Chip Creme Frappuccino Blended Beverage",
-      "img": "https://globalassets.starbucks.com/assets/e2ffa95d3c364d94b5dba029263bbf0e.jpg?impolicy=1by1_wide_topcrop_630",
+      "img": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190528_DoubleChocolatyChipCremeFrapp.jpg?impolicy=1by1_wide_topcrop_630",
       "category": "Drinks",
       "subcategory": "Frappuccino Blended Beverages",
       "type": "Creme Frappuccino",
@@ -3019,7 +3055,7 @@
     {
       "id": 110,
       "name": "Mango Dragonfruit Lemonade Starbucks Refreshers Beverage",
-      "img": "https://globalassets.starbucks.com/assets/5474a99cd4854a909613ae6e094dbfc9.jpg?impolicy=1by1_wide_topcrop_630",
+      "img": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20211210_StrawberryAcaiLemonadeRefreshers.jpg?impolicy=1by1_wide_topcrop_630",
       "category": "Drinks",
       "subcategory": "Cold Drinks",
       "type": "Starbucks Refreshers",
@@ -3273,6 +3309,170 @@
           "size": "Venti",
           "capacity": "24 fl oz",
           "calories": "370 calories"
+        }
+      ]
+    }
+  ],
+  "giftcard": [
+    {
+      "category": "Featured",
+      "see": "see all",
+      "cards": [
+        {
+          "id": "01",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy24/HappyEasterEggsFY24.png"
+        },
+        {
+          "id": "02",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
+        },
+        {
+          "id": "03",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy24/BunderfulFY24.png"
+        },
+        {
+          "id": "04",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy24/ConfettiCelebrationFY24.jpg"
+        },
+        {
+          "id": "05",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy24/BirthYayBalloonsFY24.png"
+        },
+        {
+          "id": "06",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy24/YouDayFY24.png"
+        },
+        {
+          "id": "07",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy20/LoveYouGirlFY20.jpg"
+        },
+        {
+          "id": "08",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy24/MyTreatFY24.jpg"
+        },
+        {
+          "id": "09",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy22/BigThankYouFY22.jpg"
+        },
+        {
+          "id": "010",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy23/GreatWorkDeservesCoffeeFY23.jpg"
+        },
+        {
+          "id": "011",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy24/AboveBeyondFY24.png"
+        },
+        {
+          "id": "012",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy24/ThinkinOfYaFY24.png"
+        }
+      ]
+    },
+    {
+      "category": "Easter",
+      "see": "see all",
+      "cards": [
+        {
+          "id": "013",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy24/HappyEasterEggsFY24.png"
+        },
+        {
+          "id": "014",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy24/BunderfulFY24.png"
+        },
+        {
+          "id": "015",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy22/EggceptionalFY22.png"
+        },
+        {
+          "id": "016",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy23/HappyEasterFY23.png"
+        }
+      ]
+    },
+    {
+      "category": "Sibling Appreciation",
+      "see": "see all",
+      "cards": [
+        {
+          "id": "017",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy22/AnnoyingYouFY22.png"
+        },
+        {
+          "id": "018",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy21/FavoriteSiblingFY21.png"
+        }
+      ]
+    },
+    {
+      "category": "Pet day",
+      "see": "see all",
+      "cards": [
+        {
+          "id": "019",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy23/FriskyPupsFY23.jpg"
+        },
+        {
+          "id": "020",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy23/PlayfulCatsFY23.jpg"
+        },
+        {
+          "id": "021",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy22/IWoofYouFY22.png"
+        }
+      ]
+    },
+    {
+      "category": "Spring",
+      "see": "see all",
+      "cards": [
+        {
+          "id": "022",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
+        },
+        {
+          "id": "023",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy23/SpringSeasonalFY23.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Appreciation",
+      "see": "see all",
+      "cards": [
+        {
+          "id": "024",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy24/AllYouDoFY24.png"
+        },
+        {
+          "id": "025",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy23/YouAmazeMeFY23.jpg"
+        },
+        {
+          "id": "026",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy23/YoureJustTheBestFY23.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Admin Appreciation",
+      "see": "see all",
+      "cards": [
+        {
+          "id": "027",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy24/AboveBeyondFY24.png"
+        },
+        {
+          "id": "028",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy23/BestAdminEverFY23.jpg"
+        },
+        {
+          "id": "029",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy23/GreatWorkDeservesCoffeeFY23.jpg"
+        },
+        {
+          "id": "030",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy22/LostWithoutYouFY22.jpg"
         }
       ]
     }

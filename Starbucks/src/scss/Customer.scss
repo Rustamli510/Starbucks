@@ -1,3 +1,9 @@
+:root {
+    --swiper-navigation-size: 14px !important;
+    --swiper-theme-color: #fff !important;
+    --swiper-navigation-top-offset: 214px;
+}
+
 .service {
     padding: 0;
 
@@ -86,6 +92,28 @@
             box-shadow: 8px 3px 8px rgba(0, 0, 0, .16), 3px 3px 8px rgba(0, 0, 0, .23);
             ;
 
+            .swiper {
+                position: static !important;
+
+                .swiper-button-next {
+                    color: #fff !important;
+                    font-size: var(--swiper-navigation-size);
+                    font-weight: 900;
+                    right: 190px;
+                }
+
+                .swiper-button-prev {
+                    color: #fff;
+                    font-size: var(--swiper-navigation-size);
+                    font-weight: 900;
+                    left: 190px;
+                }
+
+                .swiper-pagination {
+                    z-index: 0 !important;
+                }
+            }
+
             h3 {
                 font-size: 20px;
                 font-weight: 600;
@@ -111,6 +139,7 @@
                 padding: 7px 16px;
                 color: white;
                 transition: ease-in-out .2s;
+                display: inline-block;
 
                 &:hover {
                     background-color: rgba(255, 255, 255, .15);
@@ -133,6 +162,81 @@
             font-weight: 600;
             color: black;
         }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            width: 750px;
+            padding-top: 20px;
+
+            .card {
+                text-align: center;
+                transition: ease-in-out .3s;
+                cursor: pointer;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    li {
+                        height: 8px;
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
+
+                        &:nth-child(1) {
+                            width: 85%;
+                            background-color: #e9f4f0;
+                        }
+
+                        &:nth-child(2) {
+                            width: 90%;
+                            background-color: #d4e9e2;
+                        }
+
+                        &:nth-child(3) {
+                            width: 95%;
+                            background-color: #9ec0b5;
+                        }
+
+                        &:nth-child(4) {
+                            width: 100%;
+                            background-color: #006241;
+                        }
+                    }
+                }
+
+                div {
+                    box-shadow: 8px 3px 8px rgba(0, 0, 0, .16), 3px 3px 8px rgba(0, 0, 0, .23);
+                    height: 164px;
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+
+                    svg {
+                        width: 60px;
+                        height: 60px;
+                        margin-top: 20px;
+                    }
+
+                    p {
+                        padding: 15px 20px 10px 20px;
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 1.2;
+                        letter-spacing: -0.01em;
+                    }
+                }
+
+                &:hover {
+                    transform: scale(1.05);
+
+                    div {
+                        background-color: rgba(212, 233, 226, .33);
+                    }
+                }
+            }
+        }
     }
 
     .right {
@@ -146,7 +250,7 @@
             text-align: center;
 
             h1 {
-                font-size: 24px;
+                font-size: 19px;
                 line-height: 1.5;
                 font-weight: 600;
                 color: #00754A;
@@ -234,11 +338,11 @@
             padding-top: 30px;
         }
 
-        .right-bottom{
-            .top{
+        .right-bottom {
+            .top {
                 display: flex;
 
-                p{
+                p {
                     padding-right: 18px;
                     font-size: 16px;
                     font-weight: 400;
@@ -248,10 +352,10 @@
                 }
             }
 
-            .bottom{
+            .bottom {
                 display: flex;
 
-                p{
+                p {
                     padding-right: 18px;
                     font-size: 16px;
                     font-weight: 400;

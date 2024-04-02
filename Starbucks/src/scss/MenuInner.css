@@ -1,0 +1,35 @@
+.container {
+  width: 1104px;
+  margin: 0 auto;
+}
+
+.top-text h1 {
+  text-transform: uppercase;
+  font-size: 28px;
+  line-height: 1.385;
+  font-weight: 700;
+  padding: 32px 0;
+}
+
+.sidebar {
+  padding: 40px 0;
+}
+.sidebar h1 {
+  font-size: 19px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+.sidebar ul li {
+  padding: 10px 0;
+  width: 150px;
+  color: rgba(0, 0, 0, 0.5803921569);
+}
+.sidebar .food {
+  padding-top: 24px;
+}
+.sidebar .at-home {
+  padding-top: 24px;
+}
+.sidebar .merc {
+  padding-top: 24px;
+}/*# sourceMappingURL=MenuInner.css.map */

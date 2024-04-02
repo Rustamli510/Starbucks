@@ -1,0 +1,44 @@
+.container {
+    width: 1104px;
+    margin: 0 auto;
+}
+
+.top-text {
+    h1 {
+        text-transform: uppercase;
+        font-size: 28px;
+        line-height: 1.385;
+        font-weight: 700;
+        padding: 32px 0;
+    }
+}
+
+.sidebar {
+    padding: 40px 0;
+
+    h1 {
+        font-size: 19px;
+        line-height: 1.5;
+        font-weight: 600;
+    }
+
+    ul{
+        li{
+            padding: 10px 0;
+            width: 150px;
+            color: #00000094;
+        }
+    }
+
+    .food{
+        padding-top: 24px;
+    }
+
+    .at-home{
+        padding-top: 24px;
+    }
+
+    .merc{
+        padding-top: 24px;
+    }
+}

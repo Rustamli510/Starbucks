@@ -11,6 +11,10 @@ import Coffee from './Coffee'
 import People from './People'
 import Planet from './Planet'
 import Customer from './Customer'
+import Featured from './Featured'
+import Previous from './Previous'
+import Favorites from './Favorites'
+import MenuInner from './MenuInner'
 
 function App() {
 
@@ -20,7 +24,12 @@ function App() {
         <Header />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/menu' element={<Menu />} />
+          <Route path='/menu' element={<Menu />} >
+            <Route path='' element={<MenuInner/>}/>
+            <Route path='featured' element={<Featured/>} />
+            <Route path='previous' element={<Previous/>} />
+            <Route path='favorites' element={<Favorites/>} />
+          </Route>
           <Route path='/rewards' element={<Rewards />} />
           <Route path='/giftcards' element={<Giftcards />} />
           <Route path='/our-company' element={<Company />} />
@@ -30,7 +39,7 @@ function App() {
           <Route path='/customer-service' element={<Customer />} />
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </BrowserRouter >
     </>
   )
 }

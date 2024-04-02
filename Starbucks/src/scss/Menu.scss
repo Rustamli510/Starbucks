@@ -1,0 +1,27 @@
+nav {
+    border: 1px solid #dbd9d7;
+    background-color: #f9f9f9;
+
+    ul {
+        display: flex;
+        align-items: center;
+        padding-left: 123px;
+
+        li {
+            padding: 16px 0;
+            margin-right: 32px;
+
+            .active{
+                border-bottom: 1px solid black;
+            }
+            
+            a{
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1.5;
+                color: black;
+                padding-bottom: 5px;
+            }
+        }
+    }
+}

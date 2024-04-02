@@ -1,11 +1,5 @@
-.active {
-    border-bottom: 6px solid #00754a;
-    padding-bottom: 34px;
-}
-
 #overlay {
     position: absolute;
-    // inset: 0;
     top: 100px;
     left: 0;
     right: 0;
@@ -61,8 +55,13 @@ header {
                 letter-spacing: 2.55px;
                 cursor: pointer;
 
+                .active {
+                  border-bottom: 6px solid #00754a;
+                  padding-bottom: 34px;
+              }
                 a {
                     color: black;
+                    
 
                     &:hover {
                         color: #00754a;

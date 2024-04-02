@@ -1,3 +1,9 @@
+:root {
+  --swiper-navigation-size: 14px !important;
+  --swiper-theme-color: #fff !important;
+  --swiper-navigation-top-offset: 214px;
+}
+
 .service {
   padding: 0;
 }
@@ -83,6 +89,24 @@
   background-color: #00754A;
   box-shadow: 8px 3px 8px rgba(0, 0, 0, 0.16), 3px 3px 8px rgba(0, 0, 0, 0.23);
 }
+.service .customer-service .right .swiper {
+  position: static !important;
+}
+.service .customer-service .right .swiper .swiper-button-next {
+  color: #fff !important;
+  font-size: var(--swiper-navigation-size);
+  font-weight: 900;
+  right: 190px;
+}
+.service .customer-service .right .swiper .swiper-button-prev {
+  color: #fff;
+  font-size: var(--swiper-navigation-size);
+  font-weight: 900;
+  left: 190px;
+}
+.service .customer-service .right .swiper .swiper-pagination {
+  z-index: 0 !important;
+}
 .service .customer-service .right h3 {
   font-size: 20px;
   font-weight: 600;
@@ -106,6 +130,7 @@
   padding: 7px 16px;
   color: white;
   transition: ease-in-out 0.2s;
+  display: inline-block;
 }
 .service .customer-service .right a:hover {
   background-color: rgba(255, 255, 255, 0.15);
@@ -124,6 +149,68 @@
   font-weight: 600;
   color: black;
 }
+.topic .left .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 750px;
+  padding-top: 20px;
+}
+.topic .left .cards .card {
+  text-align: center;
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
+}
+.topic .left .cards .card ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.topic .left .cards .card ul li {
+  height: 8px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.topic .left .cards .card ul li:nth-child(1) {
+  width: 85%;
+  background-color: #e9f4f0;
+}
+.topic .left .cards .card ul li:nth-child(2) {
+  width: 90%;
+  background-color: #d4e9e2;
+}
+.topic .left .cards .card ul li:nth-child(3) {
+  width: 95%;
+  background-color: #9ec0b5;
+}
+.topic .left .cards .card ul li:nth-child(4) {
+  width: 100%;
+  background-color: #006241;
+}
+.topic .left .cards .card div {
+  box-shadow: 8px 3px 8px rgba(0, 0, 0, 0.16), 3px 3px 8px rgba(0, 0, 0, 0.23);
+  height: 164px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.topic .left .cards .card div svg {
+  width: 60px;
+  height: 60px;
+  margin-top: 20px;
+}
+.topic .left .cards .card div p {
+  padding: 15px 20px 10px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+.topic .left .cards .card:hover {
+  transform: scale(1.05);
+}
+.topic .left .cards .card:hover div {
+  background-color: rgba(212, 233, 226, 0.33);
+}
 .topic .right {
   width: 35%;
 }
@@ -134,7 +221,7 @@
   text-align: center;
 }
 .topic .right .join-rewards h1 {
-  font-size: 24px;
+  font-size: 19px;
   line-height: 1.5;
   font-weight: 600;
   color: #00754A;
