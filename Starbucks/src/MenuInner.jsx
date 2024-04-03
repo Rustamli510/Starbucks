@@ -18,11 +18,6 @@ function MenuInner() {
 
     return (
         <div>
-            {/* <div className="top-text">
-                <div className="container">
-                    <h1>MENU</h1>
-                </div>
-            </div> */}
             <div className="sidebar">
                 <div className="container">
                     <div className="drinks">
