@@ -1,13 +1,16 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import './scss/MenuInner.css'
+import { Link, Outlet, useLocation } from 'react-router-dom'
 
 function MenuInner() {
-    const [drink, setDrinks] = useState([])
+    const [drink, setDrink] = useState([])
+    const { pathname } = useLocation()
+    console.log(location);
 
     const getData = () => {
         axios.get('http://localhost:3000/category').then(res => {
-            setDrinks(res.data)
+            setDrink(res.data)
             console.log(drink);
         })
     }
@@ -17,9 +20,9 @@ function MenuInner() {
     }, [])
 
     return (
-        <div>
-            <div className="sidebar">
-                <div className="container">
+        <div className="container">
+            <div className='menuinner'>
+                <div className="sidebar">
                     <div className="drinks">
                         <h1>Drinks</h1>
                         <ul>
@@ -55,7 +58,38 @@ function MenuInner() {
                         </ul>
                     </div>
                 </div>
+                {/* <Outlet /> */}
+
+                <div className='all'>
+
+                    {
+                        pathname === `/menu` ? <div className="upper-text">
+                            <h1>Menu</h1>
+                            <h2>Drinks</h2>
+                        </div> : <p></p>
+                    }
+
+
+                    {
+                        pathname === "/menu" ? <div className='category-coffee'>
+                            {
+                                drink.map(item => {
+                                    return <Link className='category-coffee-item' key={item.id} to={`/menu/drinks/${item.name.toLowerCase().split(" ").join("-")}`}>
+
+                                        <div className='left-img'>
+                                            <img src={item.img} alt="" />
+                                        </div>
+                                        <div className='right-text'>
+                                            <p>{item.name}</p>
+                                        </div>
+                                    </Link>
+                                })
+                            }
+                        </div> : <Outlet />
+                    }
+                </div>
             </div>
+
         </div>
     )
 }

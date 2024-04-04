@@ -2,35 +2,43 @@
   "category": [
     {
       "id": 1,
-      "name": "Oleato"
+      "name": "Oleato",
+      "img":"https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_CaffeAmericano.jpg?impolicy=1by1_wide_topcrop_630"
     },
     {
       "id": 2,
-      "name": "Hot Coffees"
+      "name": "Hot Coffees",
+      "img":"https://globalassets.starbucks.com/digitalassets/products/bev/SBX20211217_PistachioCreamColdBrew.jpg?impolicy=1by1_wide_topcrop_630"
     },
     {
       "id": 3,
-      "name": "Hot Teas"
+      "name": "Hot Teas",
+      "img":"https://globalassets.starbucks.com/digitalassets/products/bev/SBX20211210_StrawberryAcaiLemonadeRefreshers.jpg?impolicy=1by1_wide_topcrop_630"
     },
     {
       "id": 4,
-      "name": "Hot Drinks"
+      "name": "Hot Drinks",
+      "img":"https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_CaffeMisto.jpg?impolicy=1by1_wide_topcrop_630"
     },
     {
       "id": 5,
-      "name": "Frappuccino Blended Beverages"
+      "name": "Frappuccino Blended Beverages",
+      "img":"https://globalassets.starbucks.com/digitalassets/products/bev/FY22WIN_PistachioFrapp-onGreen.jpg?impolicy=1by1_wide_topcrop_630"
     },
     {
       "id": 6,
-      "name": "Cold Coffees"
+      "name": "Cold Coffees",
+      "img":"https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190607_VanillaSweetCreamColdBrew.jpg?impolicy=1by1_wide_topcrop_630"
     },
     {
       "id": 7,
-      "name": "Iced Teas"
+      "name": "Iced Teas",
+      "img":"https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190531_IcedBlackTea.jpg?impolicy=1by1_wide_topcrop_630"
     },
     {
       "id": 8,
-      "name": "Cold Drinks"
+      "name": "Cold Drinks",
+      "img":"https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190531_IcedBlackTea.jpg?impolicy=1by1_wide_topcrop_630"
     }
   ],
 

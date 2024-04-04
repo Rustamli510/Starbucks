@@ -12,7 +12,6 @@ function Menu() {
           <li><NavLink to={"/menu/favorites"}>Favorites</NavLink></li>
         </ul>
       </nav>
-
       <Outlet/>
     </div>
   )

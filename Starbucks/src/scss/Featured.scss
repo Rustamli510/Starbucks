@@ -11,13 +11,13 @@
     }
 }
 
-.center {
+.featured-center {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
     padding-bottom: 32px;
 
-    .center-item {
+    .featured-center-item {
         background-color: #d5d0ea;
         text-align: center;
     

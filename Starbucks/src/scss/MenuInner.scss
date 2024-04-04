@@ -13,32 +13,96 @@
     }
 }
 
-.sidebar {
+.menuinner {
+    display: flex;
     padding: 40px 0;
 
-    h1 {
-        font-size: 19px;
-        line-height: 1.5;
-        font-weight: 600;
-    }
 
-    ul{
-        li{
-            padding: 10px 0;
-            width: 150px;
-            color: #00000094;
+    .sidebar {
+
+        h1 {
+            font-size: 19px;
+            line-height: 1.5;
+            font-weight: 600;
+        }
+
+        ul {
+            li {
+                padding: 10px 0;
+                width: 150px;
+                color: #00000094;
+            }
+        }
+
+        .food {
+            padding-top: 24px;
+        }
+
+        .at-home {
+            padding-top: 24px;
+        }
+
+        .merc {
+            padding-top: 24px;
         }
     }
 
-    .food{
-        padding-top: 24px;
-    }
+    .all {
+        margin-left: 119px;
 
-    .at-home{
-        padding-top: 24px;
-    }
+        .upper-text {
+            border-bottom: 1px solid lightgray;
 
-    .merc{
-        padding-top: 24px;
+            h1 {
+                font-size: 28px;
+                line-height: 1.385;
+                font-weight: 700;
+                padding-bottom: 48px;
+            }
+
+            h2 {
+                font-size: 28px;
+                line-height: 1.5;
+                font-weight: 700;
+                letter-spacing: -0.01em;
+                padding-bottom: 18px;
+            }
+        }
+
+        .category-coffee {
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 32px;
+
+            .category-coffee-item {
+                display: flex;
+                align-items: center;
+                width: 50%;
+                margin-bottom: 32px;
+
+                .left-img {
+                    max-width: 120px;
+                    max-height: 120px;
+
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                    }
+                }
+
+                .right-text {
+                    padding-left: 10px;
+                    p {
+                        color: #000000de;
+                        font-size: 22px;
+                        line-height: 1.5;
+                        font-weight: 400;
+                        letter-spacing: -0.01em;
+                    }
+                }
+            }
+        }
     }
 }

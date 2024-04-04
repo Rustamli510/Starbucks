@@ -17,8 +17,8 @@ function Featured() {
         <h1>Spring it on</h1>
       </section>
 
-      <div className="center">
-        <div className="center-item">
+      <div className="featured-center">
+        <div className="featured-center-item">
           <img src={Lavander} alt="" />
           <div className="text">
             <h2>New Lavender Crème Frappuccino® blended beverage</h2>
@@ -26,7 +26,7 @@ function Featured() {
             <Link>Order now</Link>
           </div>
         </div>
-        <div className="center-item">
+        <div className="featured-center-item">
           <img src={Lavandercream} alt="" />
           <div className="text">
             <h2>New Iced Lavender Cream Oatmilk Matcha</h2>
@@ -34,7 +34,7 @@ function Featured() {
             <Link>Order now</Link>
           </div>
         </div>
-        <div className="center-item">
+        <div className="featured-center-item">
           <img src={Oatmilk} alt="" />
           <div className="text">
             <h2>New Lavender Oatmilk Latte</h2>
@@ -42,7 +42,7 @@ function Featured() {
             <Link>Order now</Link>
           </div>
         </div>
-        <div className="center-item">
+        <div className="featured-center-item">
           <img src={Oatmilkchill} alt="" />
           <div className="text">
             <h2>New Lavender Oatmilk Chill</h2>
@@ -50,7 +50,7 @@ function Featured() {
             <Link>Order now</Link>
           </div>
         </div>
-        <div className="center-item">
+        <div className="featured-center-item">
           <img src={Strawberry} alt="" />
           <div className="text">
             <h2>Strawberry Açaí Lemonade Starbucks Refreshers® beverage</h2>
@@ -58,7 +58,7 @@ function Featured() {
             <Link>Order now</Link>
           </div>
         </div>
-        <div className="center-item">
+        <div className="featured-center-item">
           <img src={Passion} alt="" />
           <div className="text">
             <h2>Pineapple Passionfruit Lemonade Starbucks Refreshers® beverage</h2>
@@ -66,7 +66,7 @@ function Featured() {
             <Link>Order now</Link>
           </div>
         </div>
-        <div className="center-item">
+        <div className="featured-center-item">
           <img src={Mango} alt="" />
           <div className="text">
             <h2>Mango Dragonfruit Lemonade Starbucks Refreshers® beverage</h2>
@@ -74,7 +74,7 @@ function Featured() {
             <Link>Order now</Link>
           </div>
         </div>
-        <div className="center-item">
+        <div className="featured-center-item">
           <img src={Huzelnut} alt="" />
           <div className="text">
             <h2>New Hazelnut Oatmilk Shaken Espresso</h2>
