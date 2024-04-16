@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import "./scss/CoffeCategory.css"
 
 function CoffeeCategory() {
@@ -58,22 +58,22 @@ function CoffeeCategory() {
 
                 }, {})).map(item => {
                     return <div>
-                        <h2>{item[0] === 'undefined' && params.id}</h2>
+                        <h2>{item?.[0] === 'undefined' && params.id}</h2>
 
                         <div className="top">
-                            <h1>{item[1][1].type}</h1>
-                            <hr />
+                            <h1>{item[1][0]?.type}</h1>
                         </div>
-                        <div>
+                        <div className='bottom'>
                             {
                                 item[1].map(a => {
-                                    return <div className='category-inner'>
-
-                                        <img src={a.img} alt="" />
-                                        <div className="text">
-                                            <h1>{a.name}</h1>
+                                    return <Link to={`/menu/product/${a.id}`}>
+                                        <div className='category-inner'>
+                                            <img src={a.img} alt="" />
+                                            <div className="text">
+                                                <h1>{a.name}</h1>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </Link>
                                 })
                             }
                         </div>

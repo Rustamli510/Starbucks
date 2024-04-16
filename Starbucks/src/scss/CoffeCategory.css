@@ -1,3 +1,36 @@
-div {
-  border: 1px solid red;
+.top h1 {
+  color: black;
+  text-align: left;
+  border-bottom: 1px solid #dbd9d7;
+  padding-bottom: 16px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.bottom .category-inner {
+  width: 160px;
+  margin-right: 35px;
+  margin-bottom: 35px;
+}
+.bottom .category-inner img {
+  width: 100%;
+  border-radius: 100px;
+}
+.bottom .category-inner .text {
+  margin-top: 16px;
+  text-align: center;
+}
+.bottom .category-inner .text h1 {
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
 }/*# sourceMappingURL=CoffeCategory.css.map */

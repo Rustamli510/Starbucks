@@ -16,6 +16,7 @@ import Previous from './Previous'
 import Favorites from './Favorites'
 import MenuInner from './MenuInner'
 import CoffeeCategory from './CoffeeCategory'
+import CoffeeInner from './CoffeeInner'
 
 function App() {
 
@@ -26,14 +27,15 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/menu' element={<Menu />} >
-            <Route path='' element={<MenuInner/>}>
-              <Route path='drinks/:id' element={<CoffeeCategory/>}/>
-              {/* <Route path='product/:id'/> */}
+            <Route path='' element={<MenuInner />}>
+              <Route path='drinks/:id' element={<CoffeeCategory />} />
             </Route>
-            <Route path='featured' element={<Featured/>} />
-            <Route path='previous' element={<Previous/>} />
-            <Route path='favorites' element={<Favorites/>} />
+            <Route path='featured' element={<Featured />} />
+            <Route path='previous' element={<Previous />} />
+            <Route path='favorites' element={<Favorites />} />
           </Route>
+          <Route path='/menu/product/:id' element={<CoffeeInner/>}/>
+
           <Route path='/rewards' element={<Rewards />} />
           <Route path='/giftcards' element={<Giftcards />} />
           <Route path='/our-company' element={<Company />} />
