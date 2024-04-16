@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import "./scss/CoffeCategory.css"
 
 function CoffeeCategory() {
     const params = useParams()
@@ -17,15 +18,16 @@ function CoffeeCategory() {
         getCategory()
     }, [])
 
+    console.log(category);
+
 
     return (
         <div>
-            {
+            {/* {
                 <div className="subcategory-text">
                     <h1>{params.id.split('-').join(' ')}</h1>
-                    <h2></h2>
                 </div>
-            }
+            } */}
 
             {
                 // console.log(
@@ -39,35 +41,44 @@ function CoffeeCategory() {
                 //         }
                 //         prev[key].push(cur)
                 //         return prev
-                        
+
                 //     },{}))
                 // )
 
                 category &&
-                    Object.entries(category?.filter(item => {
-                        return item.subcategory.toLowerCase().split(' ').join('-') === params.id
-                    }).reduce((prev,cur,index)=>{
-                        let key=cur['type']
-                        if(!prev[key]){
-                            prev[key]=[]
-                        }
-                        prev[key].push(cur)
-                        return prev
-                        
-                    },{})).map(item=>{
-                        return <div>
-                            <h2>{item[0]}</h2>
-                            <div>
-                                {
-                                    item[1].map(a=>{
-                                        return <div>
-                                            <img src={a.img} alt="" />
-                                        </div>
-                                    })
-                                }
-                            </div>
+                Object.entries(category?.filter(item => {
+                    return item.subcategory.toLowerCase().split(' ').join('-') === params.id
+                }).reduce((prev, cur, index) => {
+                    let key = cur['type']
+                    if (!prev[key]) {
+                        prev[key] = []
+                    }
+                    prev[key].push(cur)
+                    return prev
+
+                }, {})).map(item => {
+                    return <div>
+                        <h2>{item[0] === 'undefined' && params.id}</h2>
+
+                        <div className="top">
+                            <h1>{item[1][1].type}</h1>
+                            <hr />
                         </div>
-                    })
+                        <div>
+                            {
+                                item[1].map(a => {
+                                    return <div className='category-inner'>
+
+                                        <img src={a.img} alt="" />
+                                        <div className="text">
+                                            <h1>{a.name}</h1>
+                                        </div>
+                                    </div>
+                                })
+                            }
+                        </div>
+                    </div>
+                })
             }
         </div>
     )
