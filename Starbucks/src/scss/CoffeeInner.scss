@@ -24,18 +24,20 @@ nav {
         .img {
             width: 50%;
 
-            .imgDiv{
+            .imgDiv {
                 width: 180px;
+
                 img {
                     width: 100%;
                 }
             }
         }
 
-        .text{
+        .text {
             text-align: left;
             width: 50%;
-            h2{
+
+            h2 {
                 font-size: 28px;
                 font-weight: 700;
                 line-height: 1.385;
@@ -43,12 +45,87 @@ nav {
                 color: white;
             }
 
-            p{
+            p {
                 font-size: 19px;
                 font-weight: 400;
                 line-height: 1.5;
                 letter-spacing: -0.01em;
                 color: #ffffffb3;
+            }
+        }
+    }
+}
+
+.product-bottom {
+    display: flex;
+    width: 1100px;
+    margin: 0 auto;
+
+    .left {
+        width: 50%;
+
+        .size-options {
+            h1 {
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 1.5;
+                letter-spacing: -0.01em;
+                color: #000000de;
+                padding: 0 0 12px 8px;
+            }
+
+            .size-bottom {
+                height: 4px;
+                width: 420px;
+                border-radius: 12px;
+                background-color: #d4e9e2;
+                margin-bottom: 32px;
+            }
+        }
+
+        .sizes {
+            width: 436px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 32px;
+
+            .cups {
+                text-align: center;
+                margin: 0 18px;
+
+                h5 {
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 1.5;
+                    letter-spacing: -0.01em;
+                }
+
+                p {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    letter-spacing: -0.01em;
+                }
+            }
+        }
+
+        .select-store {
+            display: flex;
+            align-items: center;
+
+            img {
+                height: 18px;
+                filter: grayscale(0%) brightness(7%);
+            }
+
+            p {
+                color: #00000094;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1.5;
+                letter-spacing: -0.01em;
+                margin-left: 10px;
             }
         }
     }

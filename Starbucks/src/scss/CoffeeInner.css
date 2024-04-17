@@ -43,4 +43,67 @@ nav ul li {
   line-height: 1.5;
   letter-spacing: -0.01em;
   color: rgba(255, 255, 255, 0.7019607843);
+}
+
+.product-bottom {
+  display: flex;
+  width: 1100px;
+  margin: 0 auto;
+}
+.product-bottom .left {
+  width: 50%;
+}
+.product-bottom .left .size-options h1 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: rgba(0, 0, 0, 0.8705882353);
+  padding: 0 0 12px 8px;
+}
+.product-bottom .left .size-options .size-bottom {
+  height: 4px;
+  width: 420px;
+  border-radius: 12px;
+  background-color: #d4e9e2;
+  margin-bottom: 32px;
+}
+.product-bottom .left .sizes {
+  width: 436px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.product-bottom .left .sizes .cups {
+  text-align: center;
+  margin: 0 18px;
+}
+.product-bottom .left .sizes .cups h5 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+.product-bottom .left .sizes .cups p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+.product-bottom .left .select-store {
+  display: flex;
+  align-items: center;
+}
+.product-bottom .left .select-store img {
+  height: 18px;
+  filter: grayscale(0%) brightness(7%);
+}
+.product-bottom .left .select-store p {
+  color: rgba(0, 0, 0, 0.5803921569);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  margin-left: 10px;
 }/*# sourceMappingURL=CoffeeInner.css.map */
