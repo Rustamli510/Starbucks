@@ -1,4 +1,7 @@
 nav {
+    position: sticky;
+    top: 0;
+    z-index: 9;
 
     ul {
         display: flex;
@@ -84,7 +87,7 @@ nav {
         }
 
         .sizes {
-            width: 436px;
+            width: 75%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -127,6 +130,157 @@ nav {
                 letter-spacing: -0.01em;
                 margin-left: 10px;
             }
+        }
+    }
+
+    .right {
+        .whats-included {
+            h1 {
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 1.5;
+                letter-spacing: -0.01em;
+                color: #000000de;
+                padding: 0 0 12px 8px;
+            }
+
+            .size-bottom {
+                height: 4px;
+                width: 420px;
+                border-radius: 12px;
+                background-color: #d4e9e2;
+                margin-bottom: 32px;
+            }
+        }
+
+        .right-center {
+            select {
+                margin-bottom: 20px;
+                border: 1px solid rgb(118, 118, 118);
+                width: 100%;
+                border-radius: 10px;
+                font-size: 16px;
+                padding: 12px 10px;
+                position: relative;
+
+                &:focus {
+                    border: 2px solid green;
+                }
+            }
+
+            .shots {
+                border: 1px solid rgb(118, 118, 118);
+                border-radius: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                padding: 12px 12px;
+
+                .label {
+                    position: absolute;
+                    top: -13px;
+                    left: 10px;
+                    background-color: white;
+                    padding: 0 3px;
+
+                    label {
+                        color: #00000094;
+                        font-size: 12px;
+                    }
+                }
+
+                .left {
+                    p {
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 1.5;
+                        letter-spacing: -0.01em;
+                    }
+                }
+
+                .count {
+                    display: flex;
+                    align-items: center;
+
+                    button {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 100%;
+                        width: 24px;
+                        height: 24px;
+                        color: green;
+                        background-color: transparent;
+                        border: none;
+                        border: 1px solid green;
+                        cursor: pointer;
+                        padding-left: 1px;
+                    }
+
+                    h2 {
+                        padding: 0 8px;
+                        font-size: 19px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+        .customize {
+            margin-top: 48px;
+
+            button {
+                border: none;
+                font-size: 19px;
+                font-weight: 600;
+                line-height: 1.2;
+                padding: 18px 24px;
+                color: white;
+                border-radius: 50px;
+                box-shadow: 0 0 6px #0000003d, 0 8px 12px #00000024;
+                background-color: #1e3932;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+
+                img {
+                    height: 28px;
+                    transform: rotate(90deg);
+                    margin-right: 3px;
+                    margin-top: -5px;
+                }
+            }
+        }
+    }
+}
+
+.nutrition {
+
+    background-color: #1e3932;
+        
+    .item {
+        border: 1px solid #cba258;
+        color: #cba258;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: -0.01em;
+        display: inline-block;
+        padding: 0 8px;
+        border-radius: 5px;
+    }
+
+    .center {
+        margin-top: 16px;
+        padding: 0;
+
+        p {
+            color: #ffffffb3;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.5;
+            letter-spacing: -0.01em;
         }
     }
 }

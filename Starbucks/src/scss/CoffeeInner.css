@@ -1,3 +1,8 @@
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
 nav ul {
   display: flex;
   align-items: center;
@@ -69,7 +74,7 @@ nav ul li {
   margin-bottom: 32px;
 }
 .product-bottom .left .sizes {
-  width: 436px;
+  width: 75%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -106,4 +111,129 @@ nav ul li {
   line-height: 1.5;
   letter-spacing: -0.01em;
   margin-left: 10px;
+}
+.product-bottom .right .whats-included h1 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: rgba(0, 0, 0, 0.8705882353);
+  padding: 0 0 12px 8px;
+}
+.product-bottom .right .whats-included .size-bottom {
+  height: 4px;
+  width: 420px;
+  border-radius: 12px;
+  background-color: #d4e9e2;
+  margin-bottom: 32px;
+}
+.product-bottom .right .right-center select {
+  margin-bottom: 20px;
+  border: 1px solid rgb(118, 118, 118);
+  width: 100%;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 12px 10px;
+  position: relative;
+}
+.product-bottom .right .right-center select:focus {
+  border: 2px solid green;
+}
+.product-bottom .right .right-center .shots {
+  border: 1px solid rgb(118, 118, 118);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 12px 12px;
+}
+.product-bottom .right .right-center .shots .label {
+  position: absolute;
+  top: -13px;
+  left: 10px;
+  background-color: white;
+  padding: 0 3px;
+}
+.product-bottom .right .right-center .shots .label label {
+  color: rgba(0, 0, 0, 0.5803921569);
+  font-size: 12px;
+}
+.product-bottom .right .right-center .shots .left p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+.product-bottom .right .right-center .shots .count {
+  display: flex;
+  align-items: center;
+}
+.product-bottom .right .right-center .shots .count button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+  color: green;
+  background-color: transparent;
+  border: none;
+  border: 1px solid green;
+  cursor: pointer;
+  padding-left: 1px;
+}
+.product-bottom .right .right-center .shots .count h2 {
+  padding: 0 8px;
+  font-size: 19px;
+  font-weight: 500;
+}
+.product-bottom .right .customize {
+  margin-top: 48px;
+}
+.product-bottom .right .customize button {
+  border: none;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.2;
+  padding: 18px 24px;
+  color: white;
+  border-radius: 50px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2392156863), 0 8px 12px rgba(0, 0, 0, 0.1411764706);
+  background-color: #1e3932;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.product-bottom .right .customize button img {
+  height: 28px;
+  transform: rotate(90deg);
+  margin-right: 3px;
+  margin-top: -5px;
+}
+
+.nutrition {
+  background-color: #1e3932;
+}
+.nutrition .item {
+  border: 1px solid #cba258;
+  color: #cba258;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  display: inline-block;
+  padding: 0 8px;
+  border-radius: 5px;
+}
+.nutrition .center {
+  margin-top: 16px;
+  padding: 0;
+}
+.nutrition .center p {
+  color: rgba(255, 255, 255, 0.7019607843);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
 }/*# sourceMappingURL=CoffeeInner.css.map */
