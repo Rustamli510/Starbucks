@@ -1,0 +1,41 @@
+.choose-store {
+  position: relative;
+  bottom: 0;
+  position: fixed;
+  background-color: #1e3932;
+  width: 100%;
+  padding: 0;
+}
+.choose-store .two-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 700px;
+  margin: 0 auto;
+}
+.choose-store .two-div .choose label {
+  color: #fff;
+}
+.choose-store .two-div .choose #demo-simple-select-standard {
+  width: 150px;
+}
+.choose-store .two-div .choose .css-n70jm4-MuiInputBase-root-MuiInput-root-MuiSelect-root::before {
+  border-bottom: 1px solid #fff;
+}
+.choose-store .two-div .choose svg {
+  color: #fff;
+}
+.choose-store .two-div .busket {
+  position: relative;
+  font-size: 35px;
+  margin-top: 8px;
+}
+.choose-store .two-div .busket span {
+  font-size: 19px;
+  font-weight: 600;
+  color: #fff;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}/*# sourceMappingURL=ChooseStore.css.map */

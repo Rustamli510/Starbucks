@@ -1,6 +1,8 @@
 import React from 'react'
 import './scss/Menu.css'
 import { NavLink, Outlet} from 'react-router-dom'
+import ChooseStore from './ChooseStore'
+
 function Menu() {
   return (
     <div>

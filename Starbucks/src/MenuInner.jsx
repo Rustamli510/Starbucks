@@ -2,6 +2,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import './scss/MenuInner.css'
 import { Link, Outlet, useLocation } from 'react-router-dom'
+import ChooseStore from './ChooseStore'
 
 function MenuInner() {
     const [drink, setDrink] = useState([])
@@ -89,6 +90,8 @@ function MenuInner() {
                     }
                 </div>
             </div>
+
+      <ChooseStore />
 
         </div>
     )

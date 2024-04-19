@@ -1,0 +1,40 @@
+.sign-in {
+    width: 500px;
+    margin: 0 auto;
+
+    h1 {
+        font-size: 28px;
+        font-size: 700;
+        line-height: 1.5;
+        letter-spacing: -0.01em;
+        text-align: center;
+    }
+
+    .form {
+        box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f, 0 1px 10px #0000001a;
+        border-radius: 12px;
+        padding: 32px;
+
+        p {
+            font-size: 16px;
+            font-size: 400;
+            line-height: 1.5;
+            letter-spacing: -0.01em;
+        }
+
+
+        .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+            width: 100% !important;
+        }
+        form{
+            .error{
+                border: 1px solid red;
+                border-radius: 5px;
+            }
+            .error-text{
+                color: red;
+            }
+           
+        }
+    }
+}

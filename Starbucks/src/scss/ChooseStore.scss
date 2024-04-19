@@ -1,0 +1,48 @@
+.choose-store {
+    position: relative;
+    bottom: 0;
+    position: fixed;
+    background-color: #1e3932;
+    width: 100%;
+    padding: 0;
+
+    .two-div {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 700px;
+        margin: 0 auto;
+
+        .choose {
+            label{
+                color: #fff;
+            }
+            #demo-simple-select-standard{
+                width: 150px;
+            }
+            .css-n70jm4-MuiInputBase-root-MuiInput-root-MuiSelect-root::before{
+                border-bottom: 1px solid #fff;
+            }
+            svg{
+                color: #fff;
+            }
+        }
+
+        .busket {
+            position: relative;
+            font-size: 35px;
+            margin-top: 8px;
+
+            span{
+                font-size: 19px;
+                font-weight: 600;
+                color: #fff;
+                position: absolute;
+                top: 55%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}

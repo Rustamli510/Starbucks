@@ -1,0 +1,32 @@
+.sign-in {
+  width: 500px;
+  margin: 0 auto;
+}
+.sign-in h1 {
+  font-size: 28px;
+  font-size: 700;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+.sign-in .form {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.0705882353), 0 4px 5px rgba(0, 0, 0, 0.0588235294), 0 1px 10px rgba(0, 0, 0, 0.1019607843);
+  border-radius: 12px;
+  padding: 32px;
+}
+.sign-in .form p {
+  font-size: 16px;
+  font-size: 400;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+.sign-in .form .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+  width: 100% !important;
+}
+.sign-in .form form .error {
+  border: 1px solid red;
+  border-radius: 5px;
+}
+.sign-in .form form .error-text {
+  color: red;
+}/*# sourceMappingURL=Sign.css.map */

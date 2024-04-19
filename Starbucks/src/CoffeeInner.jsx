@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import './scss/CoffeeInner.css'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import axios from 'axios'
 import Tall from '../img/76b8892b0db8f5d411988fe1bbbe4141.svg'
 import Venti from '../img/55e7819f7cf8e1959ec35e680d46d9a9.svg'
@@ -9,6 +9,8 @@ import Trenta from '../img/3abf3fc78365ef0b59bbfd0ecd1c8490.svg'
 import Loc from '../img/location_2838912.png'
 import Star from '../img/wizard_1803305.png'
 import Info from '../img/info_471662.png'
+import ChooseStore from './ChooseStore'
+import DataContext from './Context/DataContext'
 
 function CoffeeInner() {
 
@@ -16,6 +18,10 @@ function CoffeeInner() {
   console.log(params);
   const [coffeeData, setCoffeeData] = useState(null)
   const [count, setCount] = useState(4);
+  // const [coffeeCount, setCoffeeCount] = useState(data.length)
+  const [coffeeStyle, setCoffeeStyle] = useState(false)
+
+  const {data,setData}=useContext(DataContext)
 
   const increment = () => {
     if (count < 12) {
@@ -29,8 +35,21 @@ function CoffeeInner() {
     }
   };
 
+  const handleCoffeeClick = () => {
+    if(data.length>-1) setCoffeeStyle(true)
+    if(data.length==15){
+      setData(data)
+    
+    }
+    else {
+      setData([...data,coffeeData])
+    }
+    console.log(data);
+  }
+
   const getCoffee = () => {
     axios.get(`http://localhost:3000/coffee/${params.id}`).then(res => {
+
       setCoffeeData(res?.data)
       console.log(res.data);
     })
@@ -163,7 +182,7 @@ function CoffeeInner() {
             </div>
           </div>
 
-          <div className="customize"> 
+          <div className="customize">
             <button><img src={Star} alt="" />Customize</button>
           </div>
         </div>
@@ -178,7 +197,15 @@ function CoffeeInner() {
           <p>Espresso shots topped with hot water create a light layer of <br /> crema culminating in this wonderfully rich cup with depth and <br /> nuance.</p>
           <span>15 calories, 0g sugar, 0g fat</span>
         </div>
+
+
       </section>
+
+      <div className="order">
+        <button onClick={handleCoffeeClick}>Add to order</button>
+      </div>
+
+      <ChooseStore coffeeStyle={coffeeStyle} />
     </div>
   )
 }
