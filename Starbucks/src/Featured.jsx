@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom'
 function Featured() {
   return (
     <div>
-      <section className='top'>
+      <section className='spring'>
         <h1>Spring it on</h1>
       </section>
 

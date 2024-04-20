@@ -21,7 +21,7 @@ function CoffeeInner() {
   // const [coffeeCount, setCoffeeCount] = useState(data.length)
   const [coffeeStyle, setCoffeeStyle] = useState(false)
 
-  const {data,setData}=useContext(DataContext)
+  const { data, setData } = useContext(DataContext)
 
   const increment = () => {
     if (count < 12) {
@@ -36,13 +36,13 @@ function CoffeeInner() {
   };
 
   const handleCoffeeClick = () => {
-    if(data.length>-1) setCoffeeStyle(true)
-    if(data.length==15){
+    if (data.length > -1) setCoffeeStyle(true)
+    if (data.length == 15) {
       setData(data)
-    
+
     }
     else {
-      setData([...data,coffeeData])
+      setData([...data, coffeeData])
     }
     console.log(data);
   }
@@ -189,24 +189,28 @@ function CoffeeInner() {
       </section>
 
       <section className='nutrition'>
-        <p className="item">
-          200★ item
-        </p>
+        <div className="item">
+          <p>
+            200★ item
+          </p>
+        </div>
+
 
         <div className="center">
           <p>Espresso shots topped with hot water create a light layer of <br /> crema culminating in this wonderfully rich cup with depth and <br /> nuance.</p>
           <span>15 calories, 0g sugar, 0g fat</span>
+          <button>
+            Full nutrition ingredients list
+          </button>
         </div>
-
-
-      </section>
+      </section >
 
       <div className="order">
         <button onClick={handleCoffeeClick}>Add to order</button>
       </div>
 
       <ChooseStore coffeeStyle={coffeeStyle} />
-    </div>
+    </div >
   )
 }
 

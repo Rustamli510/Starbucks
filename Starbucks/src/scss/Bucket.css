@@ -1,1 +1,84 @@
-/*# sourceMappingURL=Bucket.css.map */
+.busket {
+  padding: 0;
+}
+.busket .review-order {
+  width: 40%;
+  height: 100vh;
+  background-color: #1e3932;
+  padding: 40px;
+  position: fixed;
+}
+.busket .review-order .review-top {
+  display: flex;
+  align-items: center;
+}
+.busket .review-order .review-top a {
+  padding-right: 24px;
+}
+.busket .review-order .review-top a svg {
+  height: 50px;
+}
+.busket .review-order .review-top a .back-menu {
+  display: flex;
+  align-items: center;
+}
+.busket .review-order .review-top a .back-menu svg {
+  height: 24px;
+}
+.busket .review-order .review-top a .back-menu p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: white;
+}
+.busket .review-order .review-section {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+}
+.busket .review-order .review-section .review-select {
+  width: 100%;
+}
+.busket .review-order .review-section .review-select h1 {
+  color: white;
+}
+.busket .review-order .review-section .review-select .store {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #627570;
+  width: 100%;
+  margin-top: 8px;
+}
+.busket .review-order .review-section .review-select .store .store-text {
+  width: 100%;
+}
+.busket .review-order .review-section .review-select .store .store-text span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: normal;
+  color: rgba(255, 255, 255, 0.7019607843);
+}
+.busket .review-order .review-section .review-select .store .store-text p {
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+.busket .review-order .review-section .review-select .store img {
+  height: 14px;
+}
+.busket .review-content {
+  display: flex;
+  justify-content: end;
+}
+.busket .review-content .review-content-orders {
+  width: 60%;
+}
+.busket .review-content .order img {
+  width: 100%;
+}/*# sourceMappingURL=Bucket.css.map */
