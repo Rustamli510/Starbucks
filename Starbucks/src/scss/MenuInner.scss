@@ -19,7 +19,6 @@
 
 
     .sidebar {
-
         h1 {
             font-size: 19px;
             line-height: 1.5;
@@ -45,6 +44,14 @@
         .merc {
             padding-top: 24px;
         }
+
+        @media (max-width: 575px) {
+            display: none;         
+        }
+
+        @media (max-width: 768px) {
+            display: none;         
+        }
     }
 
     .all {
@@ -58,6 +65,14 @@
                 line-height: 1.385;
                 font-weight: 700;
                 padding-bottom: 48px;
+
+                @media (max-width: 575px) {
+                    font-size: 24px;        
+                }
+
+                @media (max-width: 768px) {
+                    font-size: 24px;        
+                }
             }
 
             h2 {
@@ -66,7 +81,16 @@
                 font-weight: 700;
                 letter-spacing: -0.01em;
                 padding-bottom: 18px;
+
+                @media (max-width: 575px) {
+                    font-size: 19px;        
+                }
+
+                @media (max-width: 768px) {
+                    font-size: 19px;        
+                }
             }
+
         }
 
         .category-coffee {
@@ -90,6 +114,16 @@
                         height: 100%;
                         border-radius: 50%;
                     }
+
+                    @media (max-width: 575px) {
+                       max-width: 72px;
+                       max-height: 72px;       
+                    }
+
+                    @media (max-width: 768px) {
+                        max-width: 72px;
+                        max-height: 72px;       
+                     }
                 }
 
                 .right-text {
@@ -100,9 +134,25 @@
                         line-height: 1.5;
                         font-weight: 400;
                         letter-spacing: -0.01em;
+
+                        @media (max-width: 575px) {
+                            font-size: 16px;        
+                        }
+
+                        @media (max-width: 768px) {
+                            font-size: 16px;        
+                        }
                     }
                 }
+
+                @media (max-width:768px) {
+                    width: 35%;
+                }
             }
+        }
+
+        @media (max-width:575px) {
+            margin-left: 16px;
         }
     }
 }

@@ -2,7 +2,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import './scss/MenuInner.css'
 import { Link, Outlet, useLocation } from 'react-router-dom'
-import ChooseStore from './ChooseStore'
+import ChooseStore from './ChooseStore' 
 
 function MenuInner() {
     const [drink, setDrink] = useState([])
@@ -28,7 +28,7 @@ function MenuInner() {
                         <h1>Drinks</h1>
                         <ul>
                             {drink.map(item => {
-                                return <li key={item.id}>{item.name}</li>
+                                return <Link key={item.id} to={`/menu/drinks/${item.name.toLowerCase().split(" ").join("-")}`}><li>{item.name}</li></Link> 
                             })}
                         </ul>
                     </div>
@@ -91,7 +91,7 @@ function MenuInner() {
                 </div>
             </div>
 
-      <ChooseStore />
+            <ChooseStore />
 
         </div>
     )

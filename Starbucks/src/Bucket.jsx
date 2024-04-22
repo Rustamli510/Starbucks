@@ -1,19 +1,28 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './scss/Bucket.css'
 import DataContext from './Context/DataContext'
 import Down from '../img/down-chevron.png'
+import { GrEdit } from "react-icons/gr";
+import { CiCirclePlus } from "react-icons/ci";
+import { CiCircleMinus } from "react-icons/ci";
 
 function Bucket() {
-  const { data } = useContext(DataContext)
-  console.log(data);
-
+  const { data,setData } = useContext(DataContext)
   const [age, setAge] = React.useState('');
-
   const handleChange = (event) => {
     setAge(event.target.value);
   };
 
+  const handleMinus = (INDEX) => {
+    setData((prevData) => prevData.filter((item, idx) => idx !== INDEX));
+  };
+  
+  const handlePlus=(ID)=>{
+    setData(prevData=>(
+      [...prevData,prevData.find(item=>item.id===ID)]
+    ))
+   }
   return (
     <div>
       <section className="busket">
@@ -44,14 +53,23 @@ function Bucket() {
         <div className='review-content'>
           <div className='review-content-orders'>
             {
-              data.map((item) => {
+              data.map((item,index) => {
                 return <div className="order" key={item.id}>
                   <div className="coffee-order">
-                    <img src={item?.img} alt="" />
+                    <div className="coffee-order-img">
+                      <img src={item?.img} alt="" />
+                    </div>
                     <div className="coffee-order-text">
                       <h1>{item?.name}</h1>
                       <p>Grande</p>
                       <span>200★ item</span>
+                      <div className="icons">
+                        <GrEdit />
+                        <div className="icons-right">
+                          <CiCirclePlus onClick={()=>handlePlus(item.id)} />
+                          <CiCircleMinus onClick={()=>handleMinus(index)} />
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>

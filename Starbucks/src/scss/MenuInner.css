@@ -34,6 +34,16 @@
 .menuinner .sidebar .merc {
   padding-top: 24px;
 }
+@media (max-width: 575px) {
+  .menuinner .sidebar {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .menuinner .sidebar {
+    display: none;
+  }
+}
 .menuinner .all {
   margin-left: 119px;
 }
@@ -46,12 +56,32 @@
   font-weight: 700;
   padding-bottom: 48px;
 }
+@media (max-width: 575px) {
+  .menuinner .all .upper-text h1 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .menuinner .all .upper-text h1 {
+    font-size: 24px;
+  }
+}
 .menuinner .all .upper-text h2 {
   font-size: 28px;
   line-height: 1.5;
   font-weight: 700;
   letter-spacing: -0.01em;
   padding-bottom: 18px;
+}
+@media (max-width: 575px) {
+  .menuinner .all .upper-text h2 {
+    font-size: 19px;
+  }
+}
+@media (max-width: 768px) {
+  .menuinner .all .upper-text h2 {
+    font-size: 19px;
+  }
 }
 .menuinner .all .category-coffee {
   display: flex;
@@ -73,6 +103,18 @@
   height: 100%;
   border-radius: 50%;
 }
+@media (max-width: 575px) {
+  .menuinner .all .category-coffee .category-coffee-item .left-img {
+    max-width: 72px;
+    max-height: 72px;
+  }
+}
+@media (max-width: 768px) {
+  .menuinner .all .category-coffee .category-coffee-item .left-img {
+    max-width: 72px;
+    max-height: 72px;
+  }
+}
 .menuinner .all .category-coffee .category-coffee-item .right-text {
   padding-left: 10px;
 }
@@ -82,4 +124,24 @@
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.01em;
+}
+@media (max-width: 575px) {
+  .menuinner .all .category-coffee .category-coffee-item .right-text p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .menuinner .all .category-coffee .category-coffee-item .right-text p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .menuinner .all .category-coffee .category-coffee-item {
+    width: 35%;
+  }
+}
+@media (max-width: 575px) {
+  .menuinner .all {
+    margin-left: 16px;
+  }
 }/*# sourceMappingURL=MenuInner.css.map */

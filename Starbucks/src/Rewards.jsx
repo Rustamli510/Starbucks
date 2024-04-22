@@ -48,7 +48,7 @@ function Rewards() {
         <Link>Join in the app</Link>
       </div>
 
-      <section className='free-coffee'>
+      <section className='free-coffee' style={{overflow:"hidden"}}>
         <div className="free-coffee-left">
           <h1>FREE COFFEE <br /> is a tap away</h1>
           <h4>Join now to start earning Rewards.</h4>

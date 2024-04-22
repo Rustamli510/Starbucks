@@ -7,6 +7,10 @@ nav {
         align-items: center;
         padding-left: 123px;
 
+        @media (max-width: 575px) {
+            padding-left: 16px;
+        }
+
         li {
             padding: 16px 0;
             margin-right: 32px;

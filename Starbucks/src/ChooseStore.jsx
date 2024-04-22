@@ -5,7 +5,7 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import Shopping from '../img/shopping-bag.png'
 import './scss/ChooseStore.css'
-import { BsBasket3Fill } from "react-icons/bs";
+import { IoBag } from "react-icons/io5";
 import { Link } from 'react-router-dom';
 import DataContext from './Context/DataContext';
 
@@ -45,7 +45,7 @@ function ChooseStore({ coffeeStyle }) {
                     </div>
 
                     <Link to='/bucket'><div className="busket">
-                        <BsBasket3Fill style={{ color: coffeeStyle ? 'green' : "#fff" }} className='busket' />
+                        <IoBag style={{ color: coffeeStyle ? '#00a862' : "#fff" }} className='busket' />
                         <span style={{ display: coffeeStyle ? 'inline-block' : 'none' }}>{data.length}</span>
                     </div></Link>
 

@@ -14,10 +14,10 @@ import { Link, useLocation } from 'react-router-dom'
 
 function Footer() {
 
-    const location = useLocation()
+    const {pathname} = useLocation()
 
     return (
-        <footer style={{display: '/bucket' ? 'none' : 'block'}}> 
+        <footer style={{display: pathname==='/bucket' ? 'none' : 'block'}}> 
             <div className="footer-media">
                 <Accordion>
                     <AccordionSummary
