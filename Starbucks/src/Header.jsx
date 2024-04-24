@@ -54,7 +54,7 @@ function Header() {
                         </ul>
                         <div className="buttons">
                             <button>
-                                <Link>Sign in</Link>
+                                <Link to='/sign-in'>Sign in</Link>
                             </button>
                             <button>
                                 <Link>Join now</Link>

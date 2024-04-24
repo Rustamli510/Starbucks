@@ -1,3 +1,7 @@
+.li-active {
+  border-bottom: 4px solid #00754a;
+}
+
 .banner {
   width: 100%;
   height: 50px;
@@ -85,24 +89,6 @@
   width: 35px;
   height: 35px;
   background-color: hsl(158, 100%, 23%);
-  border: 1px solid hsl(158, 100%, 23%);
-  border-radius: 50px;
-  font-weight: 600;
-  line-height: 1.2;
-  padding: 7px 16px;
-  text-align: center;
-}
-@media (max-width: 575px) {
-  .free-coffee .free-coffee-left .free-coffee-left-bottom .join {
-    display: none;
-  }
-}
-.free-coffee .free-coffee-left .free-coffee-left-bottom .join-app {
-  color: white;
-  width: 35px;
-  height: 35px;
-  background-color: hsl(158, 100%, 23%);
-  border: 1px solid hsl(158, 100%, 23%);
   border-radius: 50px;
   font-weight: 600;
   line-height: 1.2;
@@ -115,7 +101,7 @@
   font-weight: 400;
   letter-spacing: -0.01em;
   line-height: 1.5;
-  padding-top: 16px;
+  padding-top: 36px;
 }
 .free-coffee .free-coffee-left .free-coffee-left-bottom p a {
   text-decoration: underline;
@@ -282,7 +268,9 @@
 
 .stars {
   background-color: rgba(211, 232, 225, 0.3294117647);
+  padding: 0;
   padding-top: 48px;
+  margin: 48px 0;
 }
 .stars .stars-top h2 {
   font-size: 28px;
@@ -291,6 +279,11 @@
   letter-spacing: 1.385;
   text-align: center;
   padding-bottom: 48px;
+}
+@media (max-width: 575px) {
+  .stars .stars-top h2 {
+    font-size: 24px;
+  }
 }
 .stars .stars-top ul {
   display: flex;
@@ -320,7 +313,7 @@
 }
 @media (max-width: 575px) {
   .stars .stars-top {
-    width: 390px;
+    max-width: 390px;
   }
 }
 .stars .stars-bottom {
@@ -493,7 +486,7 @@
 }
 .cashorcard .cashorcard-top {
   margin: 0 auto;
-  width: 634px;
+  max-width: 634px;
   text-align: center;
   padding-bottom: 88px;
 }
@@ -533,7 +526,7 @@
 }
 .cashorcard .cashorcard-bottom .dollar-section .dollar-middle {
   display: flex;
-  width: 422px;
+  max-width: 422px;
   padding: 0 24px;
   margin-left: 40px;
 }
@@ -564,25 +557,26 @@
 }
 .rewards-coming .inner {
   background-color: #d4e9e2;
-  height: 558px;
-  width: 1285px;
   position: absolute;
-  top: 32px;
+  top: 80px;
   left: 32px;
   padding: 0 40px;
   display: flex;
   align-items: center;
 }
 .rewards-coming .inner .rstars {
-  width: 241px;
-  height: 477px;
+  max-width: 241px;
+  max-height: 477px;
 }
 .rewards-coming .inner .rstars img {
   width: 100%;
 }
 .rewards-coming .inner .inner-text {
   text-align: center;
-  width: 723px;
+  max-width: 723px;
+}
+.rewards-coming .inner .inner-text .inner-text-top {
+  padding-top: 45px;
 }
 .rewards-coming .inner .inner-text .inner-text-top h2 {
   font-size: 28px;
@@ -625,14 +619,17 @@
   text-decoration: none;
 }
 .rewards-coming .inner .inner-text .join-starbucks-rewards {
+  padding-bottom: 50px;
+}
+.rewards-coming .inner .inner-text .join-starbucks-rewards a {
   background-color: hsl(158, 100%, 23%);
-  border-radius: 50px;
   padding: 7px 16px;
   color: white;
   font-size: 16px;
   font-weight: 600;
   letter-spacing: -0.01em;
   line-height: 1.5;
+  border-radius: 50px;
 }
 .rewards-coming .inner .lstars {
   width: 241px;

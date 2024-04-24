@@ -29,4 +29,7 @@
 }
 .sign-in .form form .error-text {
   color: red;
+}
+.sign-in .form form #outlined-basic {
+  color: aqua;
 }/*# sourceMappingURL=Sign.css.map */

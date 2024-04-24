@@ -6,6 +6,7 @@ nav {
     ul {
         display: flex;
         align-items: center;
+        margin: 0 auto;
 
         li {
             margin-right: 3px;
@@ -333,7 +334,7 @@ nav {
         padding: 18px 24px;
         color: white;
         position: fixed;
-        bottom: 200px;
+        bottom: 100px;
         right: 40px;
         border-radius: 50px;
         font-size: 19px;

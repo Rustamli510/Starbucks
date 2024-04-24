@@ -1,27 +1,27 @@
 import React, { useState } from 'react'
 import './scss/Rewards.css'
 import { Link } from 'react-router-dom'
-import Star from './../img/Star.webp'
-import One from './../img/getting-started-1@2x.webp'
-import Two from './../img/getting-started-2@2x.webp'
-import Three from './../img/getting-started-3@2x.webp'
-import Twentyfive from './../img/025.webp'
-import Hundred from './../img/100.webp'
-import TwoHundred from './../img/200.webp'
-import ThreeHundred from './../img/300.webp'
-import FourHundred from './../img/400.webp'
-import Fun1 from './../img/1-fun-freebies.webp'
-import Fun2 from './../img/2-order-and-pay-ahead.webp'
-import Fun3 from './../img/3-get-to-free-faster.webp'
-import A1 from './../img/1A.png'
-import B1 from './../img/1B.webp'
-import A2 from './../img/2A.png'
-import B2 from './../img/2B.webp'
-import Risunka from './../img/844262945b2a8b8cfb293156e2583872.webp'
-import LStars from './../img/7997fb008f368630d3ca3c1194fd8404.svg'
-import RStars from './../img/b7e1b20df72e802cb1cf0e97e8fe21d0.svg'
-import Delta from './../img/delta-skymiles.webp'
-import Bank from './../img/bank-of-america.webp'
+import Star from '../img/Star.webp'
+import One from '../img/getting-started-1@2x.webp'
+import Two from '../img/getting-started-2@2x.webp'
+import Three from '../img/getting-started-3@2x.webp'
+import Twentyfive from '../img/025.webp'
+import Hundred from '../img/100.webp'
+import TwoHundred from '../img/200.webp'
+import ThreeHundred from '../img/300.webp'
+import FourHundred from '../img/400.webp'
+import Fun1 from '../img/1-fun-freebies.webp'
+import Fun2 from '../img/2-order-and-pay-ahead.webp'
+import Fun3 from '../img/3-get-to-free-faster.webp'
+import A1 from '../img/1A.png'
+import B1 from '../img/1B.webp'
+import A2 from '../img/2A.png'
+import B2 from '../img/2B.webp'
+import Risunka from '../img/844262945b2a8b8cfb293156e2583872.webp'
+import LStars from '../img/7997fb008f368630d3ca3c1194fd8404.svg'
+import RStars from '../img/b7e1b20df72e802cb1cf0e97e8fe21d0.svg'
+import Delta from '../img/delta-skymiles.webp'
+import Bank from '../img/bank-of-america.webp'
 
 
 
@@ -48,17 +48,13 @@ function Rewards() {
         <Link>Join in the app</Link>
       </div>
 
-      <section className='free-coffee' style={{overflow:"hidden"}}>
+      <section className='free-coffee' style={{ overflow: "hidden" }}>
         <div className="free-coffee-left">
           <h1>FREE COFFEE <br /> is a tap away</h1>
           <h4>Join now to start earning Rewards.</h4>
           <div className="free-coffee-left-bottom">
-            <a className='join' href="">Join now</a>
-            <a className='join-app' href="">Join in the app </a>
-            <br />
-            <br />
-            <p>Or <a href="https://www.starbucks.com/rewards/mobile-apps">join in the app</a> for the best experience</p>
-            <a href="https://www.starbucks.com/rewards/mobile-apps">Or join online</a>
+            <Link className='join'>Join now</Link>
+            <p>Or <Link>join in the app</Link> for the best experience</p>
           </div>
         </div>
         <div className="free-coffee-right">
@@ -79,7 +75,7 @@ function Rewards() {
             </div>
             <div className="text">
               <h3>Create an account</h3>
-              <p>To get started, <a href="/account/create">join now</a>. You can also <a href="https://starbucks.app.link/VLa2I3inh9">join in the app</a> to get access to the full range of Starbucks® Rewards benefits.</p>
+              <p>To get started, <Link>join now</Link>. You can also <Link>join in the app</Link> to get access to the full range of Starbucks® Rewards benefits.</p>
             </div>
           </div>
 
@@ -89,7 +85,7 @@ function Rewards() {
             </div>
             <div className="text">
               <h3>Order and pay how you’d like</h3>
-              <p >Use cash, credit/debit card or save some time and pay right through the app. You’ll collect Stars all ways. <a href="#waystopay">Learn how</a></p>
+              <p >Use cash, credit/debit card or save some time and pay right through the app. You’ll collect Stars all ways. <Link>Learn how</Link></p>
             </div>
           </div>
 
@@ -116,7 +112,7 @@ function Rewards() {
                 <p>Make your drink just right with an extra espresso shot, nondairy milk or a dash of your favorite syrup.</p>
               </div>
             </div>, 0)}
-              className={border === 0 ? 'active' : ''}
+              className={border === 0 ? 'li-active' : ''}
             >25<span>★</span></li>
             <li onClick={() => handleClick(<div className="stars-bottom">
               <img src={Hundred} alt="" />
@@ -125,7 +121,7 @@ function Rewards() {
                 <p>Treat yourself to an iced coffee, buttery croissant, bag of chips and more.</p>
               </div>
             </div>, 1)}
-              className={border === 1 ? 'active' : ''}
+              className={border === 1 ? 'li-active' : ''}
             >100<span>★</span></li>
             <li onClick={() => handleClick(<div className="stars-bottom">
               <img src={TwoHundred} alt="" />
@@ -134,7 +130,7 @@ function Rewards() {
                 <p>Turn good mornings great with a delicious handcrafted drink of your choice, breakfast sandwich or oatmeal on us.</p>
               </div>
             </div>, 2)}
-              className={border === 2 ? 'active' : ''}
+              className={border === 2 ? 'li-active' : ''}
             >200<span>★</span></li>
             <li onClick={() => handleClick(<div className="stars-bottom">
               <img src={ThreeHundred} alt="" />
@@ -142,7 +138,7 @@ function Rewards() {
                 <h3>Sandwich, protein box or at-home coffee</h3>
                 <p>Enjoy a PM pick-me-up with a lunch sandwich, protein box or a bag of coffee—including Starbucks VIA Instant®.</p>              </div>
             </div>, 3)}
-              className={border === 3 ? 'active' : ''}
+              className={border === 3 ? 'li-active' : ''}
             >300<span>★</span></li>
             <li onClick={() => handleClick(<div className="stars-bottom">
               <img src={FourHundred} alt="" />
@@ -151,7 +147,7 @@ function Rewards() {
                 <p>Take home a signature cup, drink tumbler or your choice of coffee merch up to $20.</p>
               </div>
             </div>, 4)}
-              className={border === 4 ? 'active' : ''}
+              className={border === 4 ? 'li-active' : ''}
             >400<span>★</span></li>
           </ul>
         </div>
@@ -265,14 +261,16 @@ function Rewards() {
             <div className="inner-text-bottom">
               <div className="inner-text-item">
                 <img src={Delta} alt="" />
-                <p><a href="https://www.deltastarbucks.com/content/starbucks/en/overview.html?mkcpgn=dipd-sbux7042" target="_blank"><span>Link your Delta SkyMiles®</span></a> and Starbucks® Rewards accounts to earn 1 mile per $1 spent at Starbucks and double Stars on Delta travel days.<a href="#deltaSkymilesTermsDescriptionId"><sup>1</sup></a></p>
+                <p><Link><span>Link your Delta SkyMiles®</span></Link> and Starbucks® Rewards accounts to earn 1 mile per $1 spent at Starbucks and double Stars on Delta travel days.<Link><sup>1</sup></Link></p>
               </div>
               <div className="inner-text-item">
                 <img src={Bank} alt="" />
-                <p><a href="https://promotions.bankofamerica.com/starbucks?cm_mmc=ESZ-EnterpriseSales-_-Cobrand_Site-_-ES35LT0004_StarbucksRewardsModuleBofA_SRModuleBofA-_-StarbucksPartnerMktg" target="_blank"><span>Link your Bank of America</span></a> eligible card and Starbucks® Rewards account to earn 2% Cash Back and Bonus Stars on qualifying Starbucks in-app purchases.<a href="#bankOfAmericaTermsDescriptionId"><sup>2</sup></a></p>
+                <p><Link><span>Link your Bank of America</span></Link> eligible card and Starbucks® Rewards account to earn 2% Cash Back and Bonus Stars on qualifying Starbucks in-app purchases.<Link><sup>2</sup></Link></p>
               </div>
             </div>
-            <a className='join-starbucks-rewards' href="/account/create">Join Starbucks® Rewards</a>
+            <div className="join-starbucks-rewards">
+              <Link className='join-starbucks-rewards'>Join Starbucks® Rewards</Link>
+            </div>
           </div>
           <div className="lstars">
             <img src={RStars} alt="" />
@@ -284,15 +282,15 @@ function Rewards() {
       <section className='questions'>
         <div className="questions-text">
           <h2 class="sb-heading text-semibold text-lg pb3" tabindex="-1">Questions?</h2>
-          <p>We want to help in any way we can. You can ask your barista anytime or we’ve answered the most commonly asked questions <a href="https://customerservice.starbucks.com/app/answers/list/p/552" target="_blank"><span>right over here</span></a>.</p>
+          <p>We want to help in any way we can. You can ask your barista anytime or we’ve answered the most commonly asked questions <Link><span>right over here</span></Link>.</p>
         </div>
       </section>
 
       <div className="info">
         <div className="top">
           <p>At participating stores. Restrictions apply.</p>
-          <p><sup>1</sup>Excludes taxes and gratuities. At participating stores. Some restrictions apply. Flights purchased close to departure may not earn double Stars. Stars and miles may not be earned on purchases of alcohol, Starbucks Cards and Starbucks Card reloads. For details, visit <a href="https://www.deltastarbucks.com/terms" target="_blank"><span>deltastarbucks.com/terms</span></a>.<a href="#deltaSkymilesNoteId">↩</a></p>
-          <p><sup>2</sup>At participating stores only. Some restrictions apply. Linked Card members will earn 2% Cash Back on the full purchase price of every Qualifying Purchase. Extra Star offer excludes taxes and tips. Stars may not be earned on purchases of alcohol or on reloads of Starbucks Cards that are not registered. For details, visit <a href="https://promotions.bankofamerica.com/starbucks#disclosure-1223753557" target="_blank"><span>Terms and Conditions</span></a>. Bank of America, N.A. Member FDIC.<a href="#bankOfAmericaNoteId">↩</a></p>
+          <p><sup>1</sup>Excludes taxes and gratuities. At participating stores. Some restrictions apply. Flights purchased close to departure may not earn double Stars. Stars and miles may not be earned on purchases of alcohol, Starbucks Cards and Starbucks Card reloads. For details, visit <Link><span>deltastarbucks.com/terms</span></Link>.<Link>↩</Link></p>
+          <p><sup>2</sup>At participating stores only. Some restrictions apply. Linked Card members will earn 2% Cash Back on the full purchase price of every Qualifying Purchase. Extra Star offer excludes taxes and tips. Stars may not be earned on purchases of alcohol or on reloads of Starbucks Cards that are not registered. For details, visit <Link><span>Terms and Conditions</span></Link>. Bank of America, N.A. Member FDIC.<Link>↩</Link></p>
         </div>
         <div className="mid">
           <div className="earning">
@@ -303,8 +301,8 @@ function Rewards() {
           </div>
           <div className="termofuse">
             <h3>Terms of Use</h3>
-            <p>For full program details visit <a href="https://www.starbucks.com/rewards/terms/" target="_blank"><span>starbucks.com/rewards/terms</span></a>.</p>
-            <p>Starbucks® Rewards benefits are available at participating Starbucks stores. Not all stores have the ability to honor Rewards at this time. Visit the <a href="/store-locator" target="_blank"><span>Starbucks Store Locator</span></a> and search for locations honoring “Redeem Rewards”.</p>
+            <p>For full program details visit <Link><span>starbucks.com/rewards/terms</span></Link>.</p>
+            <p>Starbucks® Rewards benefits are available at participating Starbucks stores. Not all stores have the ability to honor Rewards at this time. Visit the <Link><span>Starbucks Store Locator</span></Link> and search for locations honoring “Redeem Rewards”.</p>
           </div>
         </div>
         <div className="bottom">

@@ -26,15 +26,20 @@
         .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
             width: 100% !important;
         }
-        form{
-            .error{
+
+        form {
+            .error {
                 border: 1px solid red;
                 border-radius: 5px;
             }
-            .error-text{
+
+            .error-text {
                 color: red;
             }
-           
+
+            #outlined-basic {
+                color: aqua;
+            }
         }
     }
 }
