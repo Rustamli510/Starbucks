@@ -7,12 +7,12 @@ import Chat from '../img/comment.png'
 import Phone from '../img/telephone-call.png'
 import Letter from '../img/letter.png'
 import { BsStars } from "react-icons/bs";
+import Right from '../img/right-arrow.png'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-// import './styles.css';
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
 
@@ -28,9 +28,13 @@ function Costumer() {
             <input type="text" placeholder='How can we help you?' />
             <div className="left-bottom">
               <h4>Suggestions:</h4>
-              <p>Missing stars</p>
-              <p>Order was incomplete</p>
-              <p>Apple Pay</p>
+              <div className="missing">
+                <p>Missing stars</p>
+                <p>Order was incomplete</p>
+              </div>
+              <div className="apple-pay">
+                <p>Apple Pay</p>
+              </div>
             </div>
           </div>
           <div className="right">
@@ -61,7 +65,10 @@ function Costumer() {
 
       <section className='topic'>
         <div className="left">
-          <Link>Browse All Topics </Link>
+          <div className="topic-top">
+            <Link>Browse All Topics </Link>
+            <img src={Right} alt="" />
+          </div>
           <div className="cards">
             <div className="card">
               <ul>

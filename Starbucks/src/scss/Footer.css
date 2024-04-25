@@ -104,6 +104,11 @@ footer .hr {
   background-color: rgba(0, 0, 0, 0.2);
   margin: 32px 0;
 }
+@media (max-width: 575px) {
+  footer .footer-bottom {
+    padding-bottom: 70px;
+  }
+}
 footer .footer-bottom .ft-bt-top ul {
   display: flex;
   margin-left: -5px;

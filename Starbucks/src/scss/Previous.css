@@ -1,9 +1,60 @@
-.container {
-  width: 1500px;
-  margin: 0 auto;
+.section .card {
+  margin: 40px 120px;
 }
-
-h1 {
-  font-size: 24px;
+.section .card h1 {
+  font-size: 1.6rem;
+  padding-bottom: 1.6rem;
+  letter-spacing: -0.001;
   font-weight: 700;
+}
+.section .card img {
+  width: 225px;
+}
+.section .card .text {
+  width: 314px;
+}
+.section .card .text h2 {
+  padding: 1.6rem 0;
+  font-size: 1.9rem;
+  letter-spacing: -0.001;
+  font-weight: 600;
+}
+.section .card .text p {
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.5803921569);
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.001;
+}
+.section .card .links {
+  padding-top: 1.6rem;
+}
+.section .card .links a {
+  border-radius: 50px;
+  border: 1px solid black;
+  background-color: white;
+  margin-right: 1.6rem;
+  transition: 0.5s;
+  font-weight: 600;
+  display: inline-block;
+  font-size: 14px;
+  padding: 7px 16px;
+  color: rgba(0, 0, 0, 0.8705882353);
+  transition: 0.5s;
+}
+.section .card .links a:hover {
+  background-color: rgba(30, 57, 50, 0.1019607843);
+  border-radius: 50px;
+}
+.section .card .links a:nth-child(2) {
+  background-color: black;
+  color: white;
+}
+.section .card .links a:nth-child(2):hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 575px) {
+  .section .card {
+    margin: 40px 20px;
+  }
 }/*# sourceMappingURL=Previous.css.map */

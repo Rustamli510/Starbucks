@@ -16,9 +16,19 @@
   gap: 32px;
   padding-bottom: 32px;
 }
+@media (max-width: 575px) {
+  .featured-center {
+    display: block;
+  }
+}
 .featured-center .featured-center-item {
   background-color: #d5d0ea;
   text-align: center;
+}
+@media (max-width: 575px) {
+  .featured-center .featured-center-item {
+    margin-bottom: 32px;
+  }
 }
 .featured-center .featured-center-item img {
   width: 100%;

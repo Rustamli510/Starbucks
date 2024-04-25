@@ -17,19 +17,27 @@
     gap: 32px;
     padding-bottom: 32px;
 
+    @media (max-width:575px) {
+        display: block;
+    }
+
     .featured-center-item {
         background-color: #d5d0ea;
         text-align: center;
-    
+
+        @media (max-width:575px) {
+            margin-bottom: 32px;
+        }
+
         img {
             width: 100%;
             padding-bottom: 8px;
         }
-    
+
         .text {
-    
-            padding:  0 40px 45px 40px;
-    
+
+            padding: 0 40px 45px 40px;
+
             h2 {
                 font-size: 24px;
                 letter-spacing: -0.01em;
@@ -38,7 +46,7 @@
                 color: #1e3932;
                 padding-bottom: 32px;
             }
-    
+
             p {
                 font-size: 19px;
                 letter-spacing: -0.01em;
@@ -47,35 +55,35 @@
                 color: #1e3932;
                 padding-bottom: 32px;
             }
-    
-            a{
+
+            a {
                 padding: 7px 16px;
-                color: hsl(164,31%,17%);
+                color: hsl(164, 31%, 17%);
                 line-height: 1.2;
                 font-weight: 600;
                 border-radius: 50px;
-                border: 1px solid hsl(164,31%,17%);
+                border: 1px solid hsl(164, 31%, 17%);
                 transition: ease-in-out .2s;
-    
-                &:hover{
-                    background-color: hsla(164,31%,17%,10%);
+
+                &:hover {
+                    background-color: hsla(164, 31%, 17%, 10%);
                 }
             }
         }
-    
-        &:nth-child(5){
+
+        &:nth-child(5) {
             background-color: #cee8c9;
         }
-    
-        &:nth-child(6){
+
+        &:nth-child(6) {
             background-color: #cee8c9;
         }
-    
-        &:nth-child(7){
+
+        &:nth-child(7) {
             background-color: #d9db6d;
         }
-    
-        &:nth-child(8){
+
+        &:nth-child(8) {
             background-color: #d9db6d;
         }
     }

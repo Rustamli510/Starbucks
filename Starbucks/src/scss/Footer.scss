@@ -124,6 +124,10 @@ footer {
 
     .footer-bottom {
 
+        @media (max-width:575px) {
+            padding-bottom: 70px;
+        }
+
         .ft-bt-top {
             ul {
                 display: flex;
