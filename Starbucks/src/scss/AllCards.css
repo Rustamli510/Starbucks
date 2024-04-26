@@ -1,0 +1,21 @@
+.see-all {
+  padding: 40px;
+}
+.see-all .allcards {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 20px;
+}
+.see-all .allcards .allcard img {
+  border-radius: 10px;
+  width: 100%;
+  transition: 300ms;
+}
+.see-all .allcards .allcard img:hover {
+  transform: translateY(-10px);
+}
+@media (max-width: 575px) {
+  .see-all .allcards {
+    grid-template-columns: repeat(2, auto);
+  }
+}/*# sourceMappingURL=AllCards.css.map */

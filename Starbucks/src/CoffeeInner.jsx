@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import './scss/CoffeeInner.css'
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import axios from 'axios'
 import Tall from '../img/76b8892b0db8f5d411988fe1bbbe4141.svg'
 import Venti from '../img/55e7819f7cf8e1959ec35e680d46d9a9.svg'
@@ -8,7 +8,6 @@ import Grande from '../img/2920fb2a8c34d3ddb95ad262872526e9.svg'
 import Trenta from '../img/3abf3fc78365ef0b59bbfd0ecd1c8490.svg'
 import Loc from '../img/location_2838912.png'
 import Star from '../img/wizard_1803305.png'
-import Info from '../img/info_471662.png'
 import ChooseStore from './ChooseStore'
 import DataContext from './Context/DataContext'
 
@@ -18,7 +17,6 @@ function CoffeeInner() {
   console.log(params);
   const [coffeeData, setCoffeeData] = useState(null)
   const [count, setCount] = useState(4);
-  // const [coffeeCount, setCoffeeCount] = useState(data.length)
   const [coffeeStyle, setCoffeeStyle] = useState(false)
 
   const { data, setData } = useContext(DataContext)
@@ -44,14 +42,14 @@ function CoffeeInner() {
     else {
       setData([...data, coffeeData])
     }
-    console.log(data);
+    // console.log(data);
   }
 
   const getCoffee = () => {
     axios.get(`http://localhost:3000/coffee/${params.id}`).then(res => {
 
       setCoffeeData(res?.data)
-      console.log(res.data);
+      // console.log(res.data);
     })
   }
 
@@ -105,7 +103,7 @@ function CoffeeInner() {
       </section>
 
       <section className='product-bottom'>
-        <div className="left">
+        <div className="size-option-left">
           <div className="size-options">
             <h1>Size options</h1>
             <div className="size-bottom"></div>
@@ -140,7 +138,7 @@ function CoffeeInner() {
           </div>
         </div>
 
-        <div className="right">
+        <div className="size-option-right">
           <div className="whats-included">
             <h1>What's included</h1>
             <div className="size-bottom"></div>

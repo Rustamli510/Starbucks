@@ -2,17 +2,19 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import './scss/MenuInner.css'
 import { Link, Outlet, useLocation } from 'react-router-dom'
-import ChooseStore from './ChooseStore' 
+import ChooseStore from './ChooseStore'
+
+
 
 function MenuInner() {
     const [drink, setDrink] = useState([])
     const { pathname } = useLocation()
-    console.log(location);
+    // console.log(location);
 
     const getData = () => {
         axios.get('http://localhost:3000/category').then(res => {
             setDrink(res.data)
-            console.log(drink);
+            // console.log(drink);
         })
     }
 
@@ -28,7 +30,7 @@ function MenuInner() {
                         <h1>Drinks</h1>
                         <ul>
                             {drink.map(item => {
-                                return <Link key={item.id} to={`/menu/drinks/${item.name.toLowerCase().split(" ").join("-")}`}><li>{item.name}</li></Link> 
+                                return <Link key={item.id} to={`/menu/drinks/${item.name.toLowerCase().split(" ").join("-")}`}><li>{item.name}</li></Link>
                             })}
                         </ul>
                     </div>
@@ -59,10 +61,8 @@ function MenuInner() {
                         </ul>
                     </div>
                 </div>
-                {/* <Outlet /> */}
 
                 <div className='all'>
-
                     {
                         pathname === `/menu` ? <div className="upper-text">
                             <h1>Menu</h1>
@@ -70,9 +70,9 @@ function MenuInner() {
                         </div> : <p></p>
                     }
 
-
                     {
                         pathname === "/menu" ? <div className='category-coffee'>
+                            
                             {
                                 drink.map(item => {
                                     return <Link className='category-coffee-item' key={item.id} to={`/menu/drinks/${item.name.toLowerCase().split(" ").join("-")}`}>

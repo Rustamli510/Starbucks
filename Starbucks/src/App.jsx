@@ -18,9 +18,9 @@ import MenuInner from './MenuInner'
 import CoffeeCategory from './CoffeeCategory'
 import CoffeeInner from './CoffeeInner'
 import Bucket from './Bucket'
-// import ChooseStore from './ChooseStore'
 import DataContext from './Context/DataContext'
 import Sign from './Sign'
+import AllCards from './AllCards'
 
 function App() {
 
@@ -43,6 +43,7 @@ function App() {
           <Route path='/menu/product/:id' element={<CoffeeInner />} />
           <Route path='/rewards' element={<Rewards />} />
           <Route path='/giftcards' element={<Giftcards />} />
+          <Route path='/giftcards/see-all' element={<AllCards/>} />
           <Route path='/our-company' element={<Company />} />
           <Route path='/our-coffee' element={<Coffee />} />
           <Route path='/people' element={<People />} />

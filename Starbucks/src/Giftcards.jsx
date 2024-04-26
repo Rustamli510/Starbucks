@@ -8,10 +8,12 @@ import Slider from "react-slick";
 import axios from "axios";
 
 function Card() {
+
   const [data, setData] = useState([]);
   useEffect(() => {
     CardData();
   }, []);
+
   function CardData() {
     axios
       .get("http://localhost:3000/giftcard")
@@ -39,7 +41,7 @@ function Card() {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 2,
           slidesToScroll: 4,
           initialSlide: 2,
         },
@@ -47,8 +49,8 @@ function Card() {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: 2,
+          slidesToScroll: 2,
         },
       },
     ],
@@ -58,16 +60,15 @@ function Card() {
       <div className="carusel-cards">
         <div className="carusel-texts">
           <h5 className="one-category">{cardsCategory[0]}</h5>
-          <Link to={`/gift/category/${cardsCategory[0]}`} className="see">{cardsAll[0]}</Link>
+          <Link to={`/gift/category/${cardsCategory[0]}`} className="see-all">{cardsAll[0]}</Link>
         </div>
         <Slider {...settings}>
           {data[0]?.cards.map((item) => (
-            <Link to={`/gift/${item.id}`} key={item.id}>
+            <Link to={'/giftcards/see-all'} key={item.id}>
               <div className="gift-card"  >
                 <img src={item.img} alt="" />
               </div>
             </Link>
-
           ))}
         </Slider>
         <div className="fade">
@@ -103,7 +104,7 @@ function Card() {
               <h5 className="one-category">{categoryData.category}</h5>
               <Link
                 to={`/gift/category/${categoryData.category}`}
-                className="see"
+                className="see-all"
               >
                 {categoryData.see}
               </Link>

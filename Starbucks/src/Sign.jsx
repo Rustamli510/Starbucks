@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import { useFormik } from 'formik';
 import { signInSchema } from './schema';
+import { Link } from '@mui/material';
 function Sign() {
     const formik = useFormik({
         initialValues: {
@@ -25,7 +26,7 @@ function Sign() {
                     <p><span>* </span>indicates required field</p>
 
                     <form onSubmit={formik.handleSubmit}>
-                        <TextField id="outlined-basic" label="*Username or email address" value={formik.values.name} onChange={formik.handleChange} variant="outlined" name='name' className={`${formik.errors.name && 'error' }`} />
+                        <TextField id="outlined-basic" label="*Username or email address" value={formik.values.name} onChange={formik.handleChange} variant="outlined" name='name' className={`${formik.errors.name && 'error'}`} />
                         <p className={`${formik.errors.name && 'error-text'}`}>{formik.errors.name && 'Enter an email or username'}</p>
 
                         <TextField
@@ -38,8 +39,22 @@ function Sign() {
                             value={formik.values.password}
                             className={`${formik.errors.password && 'error'}`}
                         />
-                        <p className={`${formik.errors.password && 'error-text'}`}>{formik.errors.password && 'Enter an email or username'}</p>
-                        <button type='submit'>Gonder</button>
+                        <p className={`${formik.errors.password && 'error-text'}`}>{formik.errors.password && 'Enter password'}</p>
+
+                        <div className="keep">
+                            <div className="check">
+                                <input type="checkbox" name="" id="" />
+                                <p>Keep me signed in.<Link>Details</Link></p>
+                            </div>
+
+                            <div className="forgot">
+                                <Link>Forgot your username?</Link>
+                                <Link>Forgot your password?</Link>
+                            </div>
+                        </div>
+                        <div className="sign-button">
+                            <button type='submit'>Sign in</button>
+                        </div>
                     </form>
                 </div>
             </section>

@@ -8,6 +8,7 @@
   line-height: 1.5;
   letter-spacing: -0.01em;
   text-align: center;
+  margin-bottom: 48px;
 }
 .sign-in .form {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.0705882353), 0 4px 5px rgba(0, 0, 0, 0.0588235294), 0 1px 10px rgba(0, 0, 0, 0.1019607843);
@@ -19,6 +20,7 @@
   font-size: 400;
   line-height: 1.5;
   letter-spacing: -0.01em;
+  padding-bottom: 24px;
 }
 .sign-in .form .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
   width: 100% !important;
@@ -32,4 +34,51 @@
 }
 .sign-in .form form #outlined-basic {
   color: aqua;
+}
+.sign-in .form .keep .check {
+  display: flex;
+  align-items: center;
+}
+.sign-in .form .keep .check input[type=checkbox] {
+  margin-top: -25px;
+  width: 24px;
+  height: 24px;
+}
+.sign-in .form .keep .check p {
+  font-size: 16px;
+  padding-left: 10px;
+}
+.sign-in .form .keep .check p a {
+  color: #006241;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.sign-in .form .keep .forgot {
+  display: flex;
+  flex-direction: column;
+}
+.sign-in .form .keep .forgot a {
+  color: #006241;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.sign-in .form .sign-button {
+  border: none;
+  display: flex;
+  justify-content: right;
+  margin-top: 36px;
+}
+.sign-in .form .sign-button button {
+  border: none;
+  background-color: #00754a;
+  padding: 18px 24px;
+  border-radius: 50px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2392156863);
+  color: white;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 14px;
+  cursor: pointer;
 }/*# sourceMappingURL=Sign.css.map */

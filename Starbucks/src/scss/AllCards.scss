@@ -1,0 +1,25 @@
+.see-all {
+    padding: 40px;
+
+    .allcards {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        gap: 20px;
+
+        .allcard {
+            img {
+                border-radius: 10px;
+                width: 100%;
+                transition: 300ms;
+
+                &:hover {
+                    transform: translateY(-10px);
+                }
+            }
+        }
+
+        @media (max-width:575px) {
+            grid-template-columns: repeat(2, auto);
+        }
+    }
+}

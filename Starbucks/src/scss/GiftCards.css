@@ -4,6 +4,7 @@
 .gift-cards .carusel-cards .carusel-texts {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .gift-cards .carusel-cards .carusel-texts .one-category {
   font-size: 16px;
@@ -12,8 +13,9 @@
   margin-left: 20px;
   padding-bottom: 1.6rem;
   letter-spacing: 1px;
+  margin-top: 20px;
 }
-.gift-cards .carusel-cards .carusel-texts .see {
+.gift-cards .carusel-cards .carusel-texts .see-all {
   color: #006241;
   font-size: 16px;
   font-weight: 500;
@@ -75,6 +77,11 @@
   font-weight: 400;
   padding-left: 1.6rem;
 }
+@media (max-width: 575px) {
+  .gift-cards .carusel-cards {
+    padding: 40px;
+  }
+}
 .gift-cards .received {
   padding: 20px 131px;
   background-color: #d4e9e2;
@@ -122,4 +129,16 @@
   color: #006241;
   font-weight: 600;
   margin-top: 100px;
+}
+@media (max-width: 575px) {
+  .gift-cards .received {
+    padding: 20px;
+  }
+  .gift-cards .received .check-balance {
+    display: block;
+  }
+  .gift-cards .received .check-balance .received-texts {
+    display: block;
+    padding-bottom: 20px;
+  }
 }/*# sourceMappingURL=GiftCards.css.map */

@@ -1,12 +1,19 @@
+.top {
+  border-bottom: 1px solid #dbd9d7;
+}
 .top h1 {
   color: black;
   text-align: left;
-  border-bottom: 1px solid #dbd9d7;
   padding-bottom: 16px;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.5;
   letter-spacing: -0.01em;
+}
+@media (max-width: 575px) {
+  .top {
+    max-width: 50%;
+  }
 }
 
 .bottom {
@@ -15,12 +22,12 @@
   margin-top: 20px;
 }
 .bottom .category-inner {
-  width: 160px;
+  max-width: 160px;
   margin-right: 35px;
   margin-bottom: 35px;
 }
 .bottom .category-inner img {
-  width: 100%;
+  max-width: 100%;
   border-radius: 100px;
 }
 .bottom .category-inner .text {
@@ -36,17 +43,17 @@
 }
 @media (max-width: 768px) {
   .bottom .category-inner {
-    max-width: 125px;
+    max-width: 140px;
   }
 }
 @media (max-width: 575px) {
   .bottom {
-    width: 40%;
-    margin-left: 20px;
+    max-width: 60%;
+    padding: 0 20px;
   }
 }
 @media (max-width: 768px) {
   .bottom {
-    width: 80%;
+    max-width: 90%;
   }
 }/*# sourceMappingURL=CoffeCategory.css.map */
