@@ -5,6 +5,7 @@ import './scss/AllCards.css'
 
 function AllCards() {
     const { id } = useParams();
+    console.log(id);
     const [allData, setAllData] = useState([]);
 
     useEffect(() => {
@@ -13,17 +14,18 @@ function AllCards() {
     
     function AllData() {
         axios.get(`http://localhost:3000/giftcard`).then((res) => {
-            const selectedData = res.data.filter((card) => card.category === id);
-            setAllData(selectedData[0]);
+            console.log(res.data);
+            const selectedData = res.data.find(item=>item.category===id).cards;
+            console.log(selectedData);
+            setAllData(selectedData);
         });
     }
-    const data = allData.cards;
 
     return (
         <div>
             <section className="see-all">
                 <div className="allcards">
-                    {data?.map((item) => (
+                    {allData?.map((item) => (
                         <Link to={`/gift/${item.id}`}>
                             <div className="allcard" key={item.id}>
                                 <img src={item.img} alt="" />

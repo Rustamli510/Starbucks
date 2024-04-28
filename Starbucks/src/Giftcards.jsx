@@ -64,7 +64,7 @@ function Card() {
         </div>
         <Slider {...settings}>
           {data[0]?.cards.map((item) => (
-            <Link to={'/giftcards/see-all'} key={item.id}>
+            <Link to={`/gift/${item.id}`} key={item.id}>
               <div className="gift-card"  >
                 <img src={item.img} alt="" />
               </div>

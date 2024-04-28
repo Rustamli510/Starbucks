@@ -141,7 +141,7 @@
         }
 
         .order {
-            min-height: 100vh;
+            // min-height: 100vh;
 
 
             .coffee-order {
@@ -218,6 +218,8 @@
         .footer {
             background-color: white;
             padding: 24px 24px 70px 24px;
+            margin-top: 30px;
+
 
             .footer-media {
                 #accordion {

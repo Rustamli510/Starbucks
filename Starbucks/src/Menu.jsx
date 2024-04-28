@@ -6,7 +6,7 @@ import ChooseStore from './ChooseStore'
 function Menu() {
   return (
     <div>
-      <nav>
+      <nav className='navMain'>
         <ul className='menu'>
           <li><NavLink to={"/menu"}>Menu</NavLink></li>
           <li><NavLink to={"/menu/featured"}>Featured</NavLink></li>

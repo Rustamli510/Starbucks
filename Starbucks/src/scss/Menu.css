@@ -1,25 +1,24 @@
-nav {
+.navMain {
   border: 1px solid #dbd9d7;
   background-color: #f9f9f9;
 }
-nav .menu {
+.navMain .menu {
   display: flex;
   align-items: center;
-  padding-left: 123px;
 }
 @media (max-width: 575px) {
-  nav .menu {
+  .navMain .menu {
     padding-left: 16px;
   }
 }
-nav .menu li {
+.navMain .menu li {
   padding: 16px 0;
   margin-right: 32px;
 }
-nav .menu li .active {
+.navMain .menu li .active {
   border-bottom: 1px solid black;
 }
-nav .menu li a {
+.navMain .menu li a {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;

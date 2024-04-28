@@ -1,11 +1,11 @@
-nav {
+.navMain {
     border: 1px solid #dbd9d7;
     background-color: #f9f9f9;
 
     .menu {
         display: flex;
         align-items: center;
-        padding-left: 123px;
+        // padding-left: 123px;
 
         @media (max-width: 575px) {
             padding-left: 16px;

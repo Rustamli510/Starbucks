@@ -1,0 +1,54 @@
+.main-card {
+  padding: 40px 131px;
+}
+.main-card .formCard {
+  display: grid;
+  justify-content: center;
+}
+.main-card .formCard h1 {
+  font-size: 28px;
+  margin-bottom: 2.8rem;
+}
+.main-card .formCard img {
+  width: 500px;
+  border-radius: 10px;
+}
+.main-card .formCard p {
+  color: rgba(0, 0, 0, 0.8705882353);
+  font-size: 16px;
+  padding: 20px 0;
+}
+.main-card .formCard p sup {
+  color: #00754a;
+}
+.main-card .formCard .form-bottom-text .add-recipient {
+  text-align: center;
+}
+.main-card .formCard .form-bottom-text .add-recipient button {
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  border: none;
+  padding: 7px 11px;
+  font-weight: 600;
+  font-size: 19px;
+}
+.main-card .formCard .form-bottom-text .select-text {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+.main-card .formCard .form-bottom-text .select-text h2 {
+  border-bottom: 4px solid #d4e9e2;
+  margin-bottom: 1.6rem;
+  font-size: 24px;
+  font-weight: 600;
+}
+.main-card .formCard .form-bottom-text .select-text input {
+  border-radius: 10px;
+  padding: 12px 0;
+  margin: 20px 0;
+}
+.main-card .formCard .form-bottom-text .select-text textarea {
+  max-width: 497px;
+}/*# sourceMappingURL=MainCard.css.map */

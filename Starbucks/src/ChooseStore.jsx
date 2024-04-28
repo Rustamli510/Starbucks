@@ -11,7 +11,6 @@ import DataContext from './Context/DataContext';
 
 function ChooseStore({ coffeeStyle }) {
 
-    // const [count, setCount] = useState(1)
     const [age, setAge] = React.useState('');
 
     const handleChange = (event) => {

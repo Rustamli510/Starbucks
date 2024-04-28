@@ -114,9 +114,6 @@
   line-height: 1.2;
   font-weight: 600;
 }
-.busket .review-content .order {
-  min-height: 100vh;
-}
 .busket .review-content .order .coffee-order {
   display: flex;
   padding: 24px;
@@ -177,6 +174,7 @@
 .busket .review-content .footer {
   background-color: white;
   padding: 24px 24px 70px 24px;
+  margin-top: 30px;
 }
 .busket .review-content .footer .footer-media #accordion {
   margin: 0;
